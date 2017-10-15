@@ -114,7 +114,7 @@ def evaluate(name):
 
 def execute():
 	start = time.time()
-	files = glob.glob('*SOFTMAX*.py')
+	files = glob.glob('AE_UNIGRAMA_2L*.py')
 	print('selected files : ', files)
 	data_init()
 	for f in files:
