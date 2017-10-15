@@ -103,8 +103,8 @@ class Autoencoder:
 
 		validation_data = None
 
-		if not feature_validation == None:
-			validation_data = (feature_validation, feature_validation)
+		#if not feature_validation == None:
+		validation_data = (feature_validation, feature_validation)
 
 		h = self.__autoencoder.fit(x=feature, y=feature, validation_data=validation_data, shuffle=shuffle, 
 			epochs=epochs, batch_size=batch_size, callbacks=callbacks )
