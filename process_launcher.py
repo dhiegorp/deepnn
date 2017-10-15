@@ -24,7 +24,7 @@ rootLogger.addHandler(consoleLogger)
 
 logging.debug('sys.argv: ' + str(sys.argv) )
 
-if len(sys.argv) == 2:
+if len(sys.argv) >= 2:
 	search_term = sys.argv[1]
 
 logging.debug("Starting process launcher with search term \'" + search_term + "\'" )
