@@ -17,7 +17,7 @@ GLOBAL = {
 	'checkpoints_dir':base_path + '/checkpoints/2layers/unigram/',
 	'executed_path':base_path + '/executed/2layers/unigram/',
 	'data_dir': ds_path + '/',
-	'fullds_data_dir': ds_path + '/'
+	'fullds_data_dir': ds_path + '/',
 	#'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
 	#'fullds_data_dir':ds_path + '/malware_selected_1gram.pkl',
 	
