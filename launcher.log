@@ -1,0 +1,132 @@
+[2017-10-14 23:07:57,129 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:09:39,077 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:09:39,078 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:09:39,078 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:09:39,078 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:09:39,078 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:10:59,654 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:10:59,655 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:10:59,655 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:10:59,655 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:10:59,655 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:11:46,223 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:11:46,223 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:11:46,223 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:11:46,223 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:11:46,224 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:12:39,463 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:12:39,463 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:12:39,463 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:12:39,463 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:12:39,464 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:13:58,326 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:13:58,326 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:13:58,327 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:13:58,327 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:13:58,327 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:17:13,641 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:17:13,641 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:17:13,641 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:17:13,641 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:17:13,641 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:18:39,991 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:18:39,991 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:18:39,992 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:18:39,992 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:18:39,992 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:20:53,956 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:20:53,956 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:20:53,956 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:20:53,956 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:20:53,956 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:22:42,170 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:22:42,170 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:22:42,170 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:22:42,170 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:22:42,171 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:47:16,335 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:47:16,336 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:47:16,336 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:47:16,336 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:47:16,336 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:49:06,554 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_']
+[2017-10-14 23:49:06,555 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_'
+[2017-10-14 23:49:06,555 (line 37)]: 0 item(s) found for search_term AE_UNIGRAMA_2L_
+[2017-10-14 23:49:16,277 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py', 'AE_UNIGRAMA_2L_OVER_96_172-162_9.py', 'AE_UNIGRAMA_2L_UNDER_96_28_25_9.py', 'AE_UNIGRAMA_2L_UNDER_96_76_66_9.py', 'AE_UNIGRAMA_2L_UNDER_96_86_76_9.py']
+[2017-10-14 23:49:16,278 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_OVER_96_134_124_9.py'
+[2017-10-14 23:49:16,278 (line 37)]: 1 item(s) found for search_term AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:49:16,278 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:49:16,278 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-14 23:55:08,796 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_']
+[2017-10-14 23:55:08,796 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_'
+[2017-10-14 23:55:08,797 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_2L_
+[2017-10-14 23:56:30,718 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_']
+[2017-10-14 23:56:30,718 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_'
+[2017-10-14 23:56:30,719 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_2L_
+[2017-10-14 23:56:30,719 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_86_76_9.py for parallel execution.
+[2017-10-14 23:56:30,719 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_172-162_9.py for parallel execution.
+[2017-10-14 23:56:30,719 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_76_66_9.py for parallel execution.
+[2017-10-14 23:56:30,720 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:56:30,720 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_28_25_9.py for parallel execution.
+[2017-10-14 23:56:30,720 (line 49)]: Opening process for AE_UNIGRAMA_2L_UNDER_96_86_76_9.py
+[2017-10-14 23:58:08,808 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_']
+[2017-10-14 23:58:08,809 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_'
+[2017-10-14 23:58:08,810 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_2L_
+[2017-10-14 23:58:08,810 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_86_76_9.py for parallel execution.
+[2017-10-14 23:58:08,810 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_172-162_9.py for parallel execution.
+[2017-10-14 23:58:08,810 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_76_66_9.py for parallel execution.
+[2017-10-14 23:58:08,810 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:58:08,810 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_28_25_9.py for parallel execution.
+[2017-10-14 23:58:08,811 (line 49)]: Opening process for AE_UNIGRAMA_2L_UNDER_96_86_76_9.py
+[2017-10-14 23:58:46,209 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_2L_']
+[2017-10-14 23:58:46,209 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_2L_'
+[2017-10-14 23:58:46,210 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_2L_
+[2017-10-14 23:58:46,210 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_86_76_9.py for parallel execution.
+[2017-10-14 23:58:46,210 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_172-162_9.py for parallel execution.
+[2017-10-14 23:58:46,210 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_76_66_9.py for parallel execution.
+[2017-10-14 23:58:46,210 (line 40)]: Registering AE_UNIGRAMA_2L_OVER_96_134_124_9.py for parallel execution.
+[2017-10-14 23:58:46,211 (line 40)]: Registering AE_UNIGRAMA_2L_UNDER_96_28_25_9.py for parallel execution.
+[2017-10-14 23:58:46,211 (line 49)]: Opening process for AE_UNIGRAMA_2L_UNDER_96_86_76_9.py
+[2017-10-15 01:00:36,874 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_172-162_9.py
+[2017-10-15 01:03:19,634 (line 49)]: Opening process for AE_UNIGRAMA_2L_UNDER_96_76_66_9.py
+[2017-10-15 01:05:06,409 (line 49)]: Opening process for AE_UNIGRAMA_2L_OVER_96_134_124_9.py
+[2017-10-15 01:06:32,604 (line 49)]: Opening process for AE_UNIGRAMA_2L_UNDER_96_28_25_9.py
+[2017-10-15 11:10:12,789 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_3L_']
+[2017-10-15 11:10:12,789 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_3L_'
+[2017-10-15 11:10:12,790 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_3L_
+[2017-10-15 11:10:12,790 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py for parallel execution.
+[2017-10-15 11:10:12,790 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py for parallel execution.
+[2017-10-15 11:10:12,791 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py for parallel execution.
+[2017-10-15 11:10:12,791 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py for parallel execution.
+[2017-10-15 11:10:12,791 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py for parallel execution.
+[2017-10-15 11:10:12,791 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py
+[2017-10-15 11:10:12,874 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py
+[2017-10-15 11:10:12,930 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py
+[2017-10-15 11:10:12,978 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py
+[2017-10-15 11:10:13,019 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py
+[2017-10-15 11:10:29,097 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_3L_']
+[2017-10-15 11:10:29,097 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_3L_'
+[2017-10-15 11:10:29,098 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_3L_
+[2017-10-15 11:10:29,098 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py for parallel execution.
+[2017-10-15 11:10:29,098 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py for parallel execution.
+[2017-10-15 11:10:29,098 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py for parallel execution.
+[2017-10-15 11:10:29,098 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py for parallel execution.
+[2017-10-15 11:10:29,099 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py for parallel execution.
+[2017-10-15 11:10:29,099 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py
+[2017-10-15 11:10:38,307 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py
+[2017-10-15 11:10:47,535 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py
+[2017-10-15 11:10:56,731 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py
+[2017-10-15 11:11:05,935 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py
+[2017-10-15 11:11:29,176 (line 25)]: sys.argv: ['process_launcher.py', 'AE_UNIGRAMA_3L_']
+[2017-10-15 11:11:29,177 (line 30)]: Starting process launcher with search term 'AE_UNIGRAMA_3L_'
+[2017-10-15 11:11:29,178 (line 37)]: 5 item(s) found for search_term AE_UNIGRAMA_3L_
+[2017-10-15 11:11:29,178 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py for parallel execution.
+[2017-10-15 11:11:29,178 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py for parallel execution.
+[2017-10-15 11:11:29,178 (line 40)]: Registering AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py for parallel execution.
+[2017-10-15 11:11:29,178 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py for parallel execution.
+[2017-10-15 11:11:29,178 (line 40)]: Registering AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py for parallel execution.
+[2017-10-15 11:11:29,179 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_86_76_66_9.py
+[2017-10-15 11:13:25,053 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_172_162_152_9.py
+[2017-10-15 11:13:34,303 (line 49)]: Opening process for AE_UNIGRAMA_3L_OVER_96_134_124_114_9.py
+[2017-10-15 11:16:01,941 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_28_25_22_9.py
+[2017-10-15 11:17:38,708 (line 49)]: Opening process for AE_UNIGRAMA_3L_UNDER_96_76_66_56_9.py
