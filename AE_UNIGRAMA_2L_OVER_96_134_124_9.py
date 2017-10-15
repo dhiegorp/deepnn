@@ -74,7 +74,8 @@ def execute_autoencoder():
 		discard_decoder_model = CONFIG['discard_decoder_function'])
 
 	logging.debug("training and evaluate autoencoder")	
-
+	print(trainx.shape)
+	print(valx.shape)
 	ae_model.train_and_eval(
 		feature=trainx, 
 		feature_validation=valx, 
