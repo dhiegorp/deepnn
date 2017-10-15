@@ -2,10 +2,10 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_1L_UNIGRAM import *
+from GLOBAL_EXP_CONFIG_2L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
-from datasets.dataset_loader import DatasetLoader
+from datasets.dataset_loader import CSVDatasetLoader
 import keras
 from keras.models import Model
 from keras.layers import Input, Dense
@@ -20,8 +20,11 @@ fullds_trainx, fullds_trainy, fullds_valx, fullds_valy, fullds_load_ds = None, N
 
 def data_init():
 	global minids_trainx, minids_trainy, minids_valx, minids_valy, minids_load_ds, fullds_trainx, fullds_trainy, fullds_valx, fullds_valy, fullds_load_ds
-	minids_load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
-	fullds_load_ds = DatasetLoader(GLOBAL['fullds_data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
+	minids_load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram_mini', resolve_names=True)
+	fullds_load_ds = CSVDatasetLoader(GLOBAL['fullds_data_dir'], 'malware_selected_1gram', resolve_names=True)
+	
+	#minids_load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
+	#fullds_load_ds = DatasetLoader(GLOBAL['fullds_data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	minids_trainx, minids_trainy, minids_valx, minids_valy = minids_load_ds()
 	fullds_trainx, fullds_trainy, fullds_valx, fullds_valy = fullds_load_ds()
 	msg = """
