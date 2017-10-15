@@ -110,7 +110,7 @@ def evaluate(name):
 	predict_full = model.predict(fullds_valx)
 	predict_mini = model.predict(minids_valx)
 	stats(name, predict_full, fullds_valy, GLOBAL['fullds_reports_dir'])
-	stats(name, predict_mini, minids_valy, GLOBAL['reports_dir'])
+	#stats(name, predict_mini, minids_valy, GLOBAL['reports_dir'])
 
 def execute():
 	start = time.time()
