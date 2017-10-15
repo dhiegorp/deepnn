@@ -1,6 +1,7 @@
 from keras.optimizers import SGD
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 import os.path
+from ENVIRONMENT import *
 
 environment = Environment()
 base_path = environment.base_path
