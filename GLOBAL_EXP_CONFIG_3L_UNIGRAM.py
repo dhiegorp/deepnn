@@ -46,8 +46,8 @@ GLOBAL = {
 
 
 }
-
  
+  
 MAP_DIMS = {
 	'AE_UNIGRAMA_3L_UNDER_96_76_66_56_9' :  [96,  76,  66, 56, 9],
 	'AE_UNIGRAMA_3L_UNDER_96_28_25_22_9' :  [96,  28,  25, 22, 9],
