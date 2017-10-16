@@ -13,7 +13,7 @@ network_name_path = GLOBAL['executed_path'] + network_name
 
 """
 SET ENCODER FUNCTION'S LAYERS ON layers LIST
-96-172-162-9
+96-172-162- 152 - 9
 """
 layers = MAP_DIMS[network_name]
 

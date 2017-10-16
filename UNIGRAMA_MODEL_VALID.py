@@ -2,7 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_3L_UNIGRAM import *
+from GLOBAL_EXP_CONFIG_4L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
@@ -112,9 +112,9 @@ def evaluate(name):
 	stats(name, predict_full, fullds_valy, GLOBAL['fullds_reports_dir'])
 	#stats(name, predict_mini, minids_valy, GLOBAL['reports_dir'])
 
-def execute():
+def nn_layer(layer):
 	start = time.time()
-	files = glob.glob('AE_UNIGRAMA_3L*.py')
+	files = glob.glob('AE_UNIGRAMA_{}L*.py'.format(layer))
 	print('selected files : ', files)
 	data_init()
 	for f in files:
@@ -122,6 +122,22 @@ def execute():
 	end = time.time()-start
 	print('the evaluation for fullds and minids for ', len(files), ' model(s) took ', end, ' second(s)')
 	print('model list: \n\t\t', files)
+
+def execute():
+	nn_layer(4)
+	#nn_layer(5)
+	#nn_layer(6)
+	#nn_layer(7)
+	#nn_layer(8)
+	#nn_layer(9)
+	#nn_layer(10)
+	
+	
+	
+	
+	
+
+
 
 if __name__ == '__main__':
 	execute()

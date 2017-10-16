@@ -2,7 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_3L_UNIGRAM import *
+from GLOBAL_EXP_CONFIG_8L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
@@ -13,7 +13,7 @@ network_name_path = GLOBAL['executed_path'] + network_name
 
 """
 SET ENCODER FUNCTION'S LAYERS ON layers LIST
-96-76-66-56-9
+96-172-162-152-142-9
 """
 layers = MAP_DIMS[network_name]
 
@@ -41,7 +41,6 @@ def header_log():
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
 	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram_mini', resolve_names=True)
-	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
 	=======================================
