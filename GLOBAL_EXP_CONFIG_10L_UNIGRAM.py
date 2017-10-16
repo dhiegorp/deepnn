@@ -11,12 +11,12 @@ ds_path = environment.dataset_base_path
 GLOBAL = {
 	'numpy_seed': 666,
 	'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s',
-	'log_dir': base_path + '/logs/3layers/unigram/',
-	'reports_dir': base_path + '/reports/3layers/unigram/',
-	'fullds_reports_dir': base_path + '/reports/3layers/unigram/fullds/',
-	'tensorflow_dir': base_path + '/tensorflow/3layers/unigram/',
-	'checkpoints_dir':base_path + '/checkpoints/3layers/unigram/',
-	'executed_path':base_path + '/executed/3layers/unigram/',
+	'log_dir': base_path + '/logs/10layers/unigram/',
+	'reports_dir': base_path + '/reports/10layers/unigram/',
+	'fullds_reports_dir': base_path + '/reports/10layers/unigram/fullds/',
+	'tensorflow_dir': base_path + '/tensorflow/10layers/unigram/',
+	'checkpoints_dir':base_path + '/checkpoints/10layers/unigram/',
+	'executed_path':base_path + '/executed/10layers/unigram/',
 	'data_dir': ds_path + '/',
 	'fullds_data_dir': ds_path + '/',
 	#'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
@@ -51,8 +51,8 @@ GLOBAL = {
 MAP_DIMS = {
 	#'AE_UNIGRAMA_8L_UNDER_96_76_66_56_46_36_26_16_9' :  [96,  76,  66, 56, 46, 36, 26, 16, 9],
 	#'AE_UNIGRAMA_8L_UNDER_96_28_25_22_19_16_13_10_9' :  [96,  28,  25, 22, 19, 16, 13, 10, 9],
-	'AE_UNIGRAMA_9L_OVER_96_134_124_114_104_94_84_74_64_54_44_9': [96, 134, 124, 114, 104, 94, 84, 74, 64, 54, 44, 9],
-	'AE_UNIGRAMA_9L_OVER_96_172_162_152_142_132_122_112_102_92_82_9': [96, 172, 162, 152, 142, 132, 122, 112, 102, 92, 82, 9]
+	'AE_UNIGRAMA_10L_OVER_96_134_124_114_104_94_84_74_64_54_44_9': [96, 134, 124, 114, 104, 94, 84, 74, 64, 54, 44, 9],
+	'AE_UNIGRAMA_10L_OVER_96_172_162_152_142_132_122_112_102_92_82_9': [96, 172, 162, 152, 142, 132, 122, 112, 102, 92, 82, 9]
 	#'AE_UNIGRAMA_8L_UNDER_96_86_76_66_56_46_36_26_16_9' :  [96,  86,  76, 66, 56, 46, 36, 26, 16, 9]
 }
 
