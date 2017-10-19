@@ -2,7 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_2L_UNIGRAM import *
+from GLOBAL_EXP_CONFIG_4L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
@@ -136,46 +136,7 @@ def execute_mlp():
 	logging.debug('evaluated! ')
 
 	logging.debug('generating reports ... ')
-	mlp_model.eval_stats(GLOBAL['reports_dir'])
-
-	logging.debug('done!')
-	
-
-def execute():
-	if is_executed(network_name_path):
-		logging.debug("The experiment " + network_name + " was already executed!")
-	else:
-		logging.debug(">> Initializing execution of experiment " + network_name )
-		logging.debug(">> Printing header log")
-		header_log()
-		logging.debug(">> Loading dataset... ")
-		data_init()
-		logging.debug(">> Executing autoencoder part ... ")
-		execute_autoencoder()
-		logging.debug(">> Executing classifier part ... ")
-		execute_mlp()
-		logging.debug(">> experiment " + network_name + " finished!")
-		mark_as_done(network_name_path)
-
-def main():
-	execute()
-
-
-if __name__ == '__main__':
-	main()
-import os.path
-import sys
-import logging
-from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_2L_UNIGRAM import *
-import numpy as np
-from deepnn.autoencoders.Autoencoder import Autoencoder
-from datasets.dataset_loader import DatasetLoader
-from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
-
-network_name = extract_name(sys.argv)
-network_name_path = GLOBAL['executed_path'] + network_name
-
+	ml
 """
 SET ENCODER FUNCTION'S LAYERS ON layers LIST
 96-76-66-9
