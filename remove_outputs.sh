@@ -29,21 +29,21 @@ rm ~/checkpoints/8layers/unigram/*
 rm ~/checkpoints/9layers/unigram/*
 rm ~/checkpoints/10layers/unigram/*
 
-cd ~/checkpoints/2layers/unigram/
+cd ~/tensorflow/2layers/unigram/
 rm -r *
-cd ~/checkpoints/3layers/unigram/
+cd ~/tensorflow/3layers/unigram/
 rm -r *
-cd ~/checkpoints/4layers/unigram/
+cd ~/tensorflow/4layers/unigram/
 rm -r *
-cd ~/checkpoints/5layers/unigram/
+cd ~/tensorflow/5layers/unigram/
 rm -r *
-cd ~/checkpoints/6layers/unigram/
+cd ~/tensorflow/6layers/unigram/
 rm -r *
-cd ~/checkpoints/7layers/unigram/
+cd ~/tensorflow/7layers/unigram/
 rm -r *
-cd ~/checkpoints/8layers/unigram/
+cd ~/tensorflow/8layers/unigram/
 rm -r *
-cd ~/checkpoints/9layers/unigram/
+cd ~/tensorflow/9layers/unigram/
 rm -r *
-cd ~/checkpoints/10layers/unigram/
+cd ~/tensorflow/10layers/unigram/
 rm -r *
