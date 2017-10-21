@@ -2,7 +2,15 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_4L_UNIGRAM import *
+import GLOBAL_EXP_CONFIG_2L_UNIGRAM as g2l
+import GLOBAL_EXP_CONFIG_3L_UNIGRAM as g3l
+import GLOBAL_EXP_CONFIG_4L_UNIGRAM as g4l
+import GLOBAL_EXP_CONFIG_5L_UNIGRAM as g5l
+import GLOBAL_EXP_CONFIG_6L_UNIGRAM as g6l
+import GLOBAL_EXP_CONFIG_7L_UNIGRAM as g7l
+import GLOBAL_EXP_CONFIG_8L_UNIGRAM as g8l
+import GLOBAL_EXP_CONFIG_9L_UNIGRAM as g9l
+import GLOBAL_EXP_CONFIG_10L_UNIGRAM as g10l
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
@@ -18,7 +26,7 @@ import time
 minids_trainx, minids_trainy, minids_valx, minids_valy, minids_load_ds = None, None, None, None, None
 fullds_trainx, fullds_trainy, fullds_valx, fullds_valy, fullds_load_ds = None, None, None, None, None
 
-def data_init():
+def data_init(GLOBAL):
 	global minids_trainx, minids_trainy, minids_valx, minids_valy, minids_load_ds, fullds_trainx, fullds_trainy, fullds_valx, fullds_valy, fullds_load_ds
 	minids_load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram_mini', resolve_names=True)
 	fullds_load_ds = CSVDatasetLoader(GLOBAL['fullds_data_dir'], 'malware_selected_1gram', resolve_names=True)
@@ -42,7 +50,7 @@ def data_init():
 	print(msg.format('mini ', GLOBAL['data_dir'], str(minids_trainx.shape), str(minids_trainy.shape), str(minids_valx.shape), str(minids_valy.shape)))
 
 
-def build_mlp_model(dims):
+def build_mlp_model(dims, GLOBAL):
 
 	input = Input(shape=(dims[0],))
 	encoder_layers = None
@@ -60,14 +68,14 @@ def build_mlp_model(dims):
 
 	return model
 
-def load_checkpoint(name):
+def load_checkpoint(name, MAP_DIMS, GLOBAL):
 	model = build_mlp_model(MAP_DIMS[name])
 	model.load_weights(get_checkpoint_path(name))
 	model.compile(loss=GLOBAL['mlp_configs']['loss_function'], optimizer=GLOBAL['mlp_configs']['optimizer'], metrics=['acc'])
 	return model
 
 
-def get_checkpoint_path(name):
+def get_checkpoint_path(name, GLOBAL):
 	return GLOBAL['checkpoints_dir'] + name.split('.')[0] + '_mlp.h5' 
 
 def stats( name, predictions, label, path):
@@ -104,7 +112,7 @@ def status_dump( file_pattern, confusion_matrix , html=False,string=False, pickl
 				file.write(dataframe.to_latex())
 
 
-def evaluate(name):
+def evaluate(name, MAP_DIMS, GLOBAL):
 
 	model = load_checkpoint(name)
 	predict_full = model.predict(fullds_valx)
@@ -112,32 +120,28 @@ def evaluate(name):
 	stats(name, predict_full, fullds_valy, GLOBAL['fullds_reports_dir'])
 	#stats(name, predict_mini, minids_valy, GLOBAL['reports_dir'])
 
-def nn_layer(layer):
+def nn_layer(layer, MAP_DIMS, GLOBAL):
 	start = time.time()
 	files = glob.glob('AE_UNIGRAMA_{}L*.py'.format(layer))
 	print('selected files : ', files)
-	data_init()
+	data_init(GLOBAL)
 	for f in files:
-		evaluate(f.split('.')[0])
+		evaluate(f.split('.')[0], MAP_DIMS, GLOBAL)
 	end = time.time()-start
 	print('the evaluation for fullds and minids for ', len(files), ' model(s) took ', end, ' second(s)')
 	print('model list: \n\t\t', files)
 
 def execute():
-	nn_layer(4)
-	#nn_layer(5)
-	#nn_layer(6)
-	#nn_layer(7)
-	#nn_layer(8)
-	#nn_layer(9)
-	#nn_layer(10)
-	
-	
-	
-	
-	
 
-
+	nn_layer(2, g2l.MAP_DIMS, g2l.GLOBAL)
+	nn_layer(3, g3l.MAP_DIMS, g3l.GLOBAL)
+	nn_layer(4, g4l.MAP_DIMS, g4l.GLOBAL)
+	nn_layer(5, g5l.MAP_DIMS, g5l.GLOBAL)
+	nn_layer(6, g6l.MAP_DIMS, g6l.GLOBAL)
+	nn_layer(7, g7l.MAP_DIMS, g7l.GLOBAL)
+	nn_layer(8, g8l.MAP_DIMS, g8l.GLOBAL)
+	nn_layer(9, g9l.MAP_DIMS, g9l.GLOBAL)
+	nn_layer(10, g10l.MAP_DIMS, g10l.GLOBAL)
 
 if __name__ == '__main__':
 	execute()
