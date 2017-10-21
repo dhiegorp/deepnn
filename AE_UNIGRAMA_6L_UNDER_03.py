@@ -1,4 +1,4 @@
-]import os.path
+import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
