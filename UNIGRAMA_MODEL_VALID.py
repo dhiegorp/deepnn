@@ -69,7 +69,7 @@ def build_mlp_model(dims, GLOBAL):
 	return model
 
 def load_checkpoint(name, MAP_DIMS, GLOBAL):
-	model = build_mlp_model(MAP_DIMS[name])
+	model = build_mlp_model(MAP_DIMS[name], GLOBAL)	
 	model.load_weights(get_checkpoint_path(name))
 	model.compile(loss=GLOBAL['mlp_configs']['loss_function'], optimizer=GLOBAL['mlp_configs']['optimizer'], metrics=['acc'])
 	return model
