@@ -114,7 +114,7 @@ def status_dump( file_pattern, confusion_matrix , html=False,string=False, pickl
 
 def evaluate(name, MAP_DIMS, GLOBAL):
 
-	model = load_checkpoint(name)
+	model = load_checkpoint(name, MAP_DIMS, GLOBAL)
 	predict_full = model.predict(fullds_valx)
 	predict_mini = model.predict(minids_valx)
 	stats(name, predict_full, fullds_valy, GLOBAL['fullds_reports_dir'])
