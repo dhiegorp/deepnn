@@ -1,3 +1,4 @@
+print('v 01')
 import os.path
 import sys
 import logging
