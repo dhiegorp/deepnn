@@ -2,6 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
+import GLOBAL_EXP_CONFIG_1L_UNIGRAM as g1l
 import GLOBAL_EXP_CONFIG_2L_UNIGRAM as g2l
 import GLOBAL_EXP_CONFIG_3L_UNIGRAM as g3l
 import GLOBAL_EXP_CONFIG_4L_UNIGRAM as g4l
@@ -133,6 +134,7 @@ def nn_layer(layer, MAP_DIMS, GLOBAL):
 
 def execute():
 
+	nn_layer(1, g1l.MAP_DIMS, g1l.GLOBAL)
 	nn_layer(2, g2l.MAP_DIMS, g2l.GLOBAL)
 	nn_layer(3, g3l.MAP_DIMS, g3l.GLOBAL)
 	nn_layer(4, g4l.MAP_DIMS, g4l.GLOBAL)
