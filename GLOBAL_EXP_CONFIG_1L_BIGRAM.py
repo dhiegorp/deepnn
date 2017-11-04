@@ -33,7 +33,7 @@ GLOBAL = {
 		'output_layer_activation' : 'relu',
 		'loss_function' : 'mse',
 		#'optimizer': SGD(lr=0.01),
-		'optimizer': adam(),
+		'optimizer': SGD(lr=0.01),
 		'discard_decoder_function': True
 	},
 	'mlp_configs': {
