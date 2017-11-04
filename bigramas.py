@@ -1,5 +1,5 @@
 from ENVIRONMENT import *
-from GLOBAL_EXP_CONFIG_1L_BIGRAM import 
+from GLOBAL_EXP_CONFIG_1L_BIGRAM import *
 from trial import *
 
 
