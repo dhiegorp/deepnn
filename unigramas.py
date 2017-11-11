@@ -16,6 +16,7 @@ def configure_trials(name_pattern, data, config, hidden_layers):
 	trials =[]
 	for i, hidden_layer in enumerate(hidden_layers):
 		print('ae_bigrama_1L_',i, ' - hidden:', hidden_layer[0])
+		print([96].extend(hidden_layer))
 		trials.append( Trial('ae_bigrama_1L_' + str(i), [96].extend(hidden_layer), data=data, config_dict=config) )
 	return trials
 
