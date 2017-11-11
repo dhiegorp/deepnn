@@ -19,7 +19,7 @@ def configure_trials(name_pattern, data, config, hidden_layers):
 		x = [96]
 		x.extend(hidden_layer) 
 		print('qd? ', x)
-		trials.append( Trial('ae_bigrama_1L_' + str(i), [96].extend(hidden_layer), data=data, config_dict=config) )
+		trials.append( Trial('ae_bigrama_1L_' + str(i), x, data=data, config_dict=config) )
 	return trials
 
 
