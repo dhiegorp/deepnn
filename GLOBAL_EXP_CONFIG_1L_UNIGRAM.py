@@ -16,8 +16,10 @@ GLOBAL = {
 	'tensorflow_dir': base_path + '/tensorflow/1layer/unigram/',
 	'checkpoints_dir':base_path + '/checkpoints/1layer/unigram/',
 	'executed_path':base_path + '/executed/1layer/unigram/',
-	'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
-	'fullds_data_dir':ds_path + '/malware_selected_1gram.pkl',
+	'data_dir': ds_path + '/',
+	'fullds_data_dir': ds_path + '/',
+	#'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
+	#'fullds_data_dir':ds_path + '/malware_selected_1gram.pkl',
 	
 
 	'data_target_list' : [1,2,3,4,5,6,7,8,9],
