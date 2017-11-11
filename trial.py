@@ -44,6 +44,8 @@ class Trial:
 			{}
 		=======================================
 		"""
+		print(self.__topology)
+		print(self.__config)
 		logging.debug(header.format(self.__name, ','.join(str(layer) for layer in self.__topology),  str(self.__config)))
 	
 	def __train_and_eval_autoencoder(self):
