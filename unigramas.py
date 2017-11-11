@@ -37,6 +37,8 @@ def nn_1l():
 	[124],[134],[144],[153],
 	[163],[172],[182],[192] ]
 
+	print('hidden configs: ', hidden_configs)
+
 	load_datasource('malware_selected_1gram', GL1)
 
 	trials = configure_trials('ae_unigrama_1L_', data, GL1, hidden_configs)
