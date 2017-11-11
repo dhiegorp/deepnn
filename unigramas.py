@@ -25,7 +25,11 @@ def configure_trials(name_pattern, input_dim,  data, config, hidden_layers):
 def execute_trials(trials):
 	for i, trial_exec in enumerate(trials):
 		print('executing trial ', i, ', named: ', trial_exec.name)
-		trial_exec()
+		try:
+			trial_exec()
+		except:
+			print('error executing')
+			pass
 
 
 def nn_1l():

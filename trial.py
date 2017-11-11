@@ -147,7 +147,7 @@ class Trial:
 			self.__train_and_eval_autoencoder()
 			logging.debug(">> Executing classifier part ... ")
 			self.__train_and_eval_mlp()
-			logging.debug(">> experiment " + self.__network_name + " finished!")
+			logging.debug(">> experiment " + self.__network_name() + " finished!")
 			mark_as_done(self.__network_name_path())
 
 
