@@ -14,14 +14,14 @@ def load_datasource(source, config):
 
 def configure_trials(name_pattern, data, config, hidden_layers):
 	trials =[]
-	for i, hidden_layer in hidden_layers:
+	for i, hidden_layer in enumerate(hidden_layers):
 		print('ae_bigrama_1L_', i, ' - hidden:', hidden_layer[0])
 		trials.append( Trial('ae_bigrama_1L_' + i, [96].extend(hidden_layer[0]), data=data, config_dict=config) )
 	return trials
 
 
 def execute_trials(trials):
-	for i, trial_exec in trials:
+	for i, trial_exec in enumerate(trials):
 		print('executing trial ', i, ', named: ', trial_exec.name)
 		trial_exec()
 
