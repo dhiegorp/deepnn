@@ -27,7 +27,7 @@ def main():
 
 	for i, item in hidden_configs:
 		print('ae_bigrama_1L_', i, ' - hidden:', item)
-		trials.append( Trial('ae_bigrama_1L_' + i, [96, item ,9], data=data, config_dict=GLOBAL) )
+		trials.append( Trial('ae_bigrama_1L_' + i, [96, item], data=data, config_dict=GLOBAL) )
 
 	for i, item in trials:
 		trials[i]()
