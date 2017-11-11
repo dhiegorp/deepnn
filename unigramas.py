@@ -12,14 +12,13 @@ def load_datasource(source, config):
 	data = {'trainx': trainx, 'trainy': trainy, 'valx': valx, 'valy':valy}
 
 
-def configure_trials(name_pattern, data, config, hidden_layers):
+def configure_trials(name_pattern, input_dim,  data, config, hidden_layers):
 	trials =[]
 	for i, hidden_layer in enumerate(hidden_layers):
 		print('ae_bigrama_1L_',i, ' - hidden:', hidden_layer)
-		x = [96]
-		x.extend(hidden_layer) 
-		print('qd? ', x)
-		trials.append( Trial('ae_bigrama_1L_' + str(i), x, data=data, config_dict=config) )
+		topol = [input_dim]
+		topol.extend(hidden_layer) 
+		trials.append( Trial('ae_bigrama_1L_' + str(i), topol, data=data, config_dict=config) )
 	return trials
 
 
@@ -43,7 +42,7 @@ def nn_1l():
 
 	load_datasource('malware_selected_1gram', GL1)
 
-	trials = configure_trials('ae_unigrama_1L_', data, GL1, hidden_configs)
+	trials = configure_trials('ae_unigrama_1L_', 96, data, GL1, hidden_configs)
 
 	if not trials:
 		print('No trials configured for hidden_configs ', str(hidden_configs))
