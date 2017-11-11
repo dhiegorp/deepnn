@@ -14,7 +14,7 @@ def load_datasource(source, config):
 
 def configure_trials(name_pattern, data, config, hidden_layers):
 	trials =[]
-	for i, hidden_layer in hidden_configs:
+	for i, hidden_layer in hidden_layers:
 		print('ae_bigrama_1L_', i, ' - hidden:', hidden_layer[0])
 		trials.append( Trial('ae_bigrama_1L_' + i, [96].extend(hidden_layer[0]), data=data, config_dict=config) )
 	return trials
