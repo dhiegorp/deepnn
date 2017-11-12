@@ -133,6 +133,9 @@ class Autoencoder:
 
 	def __status_dump(self, file_pattern, confusion_matrix , html=False,string=False, pickle=False, stats_as_txt=False, latex=False):
 		dataframe = self.__confusion_matrix.to_dataframe()
+
+		print('Report!')
+		print('file_pattern ', file_pattern)
 		
 		if html:
 			with open(file_pattern.format('confusion_matrix','.html'),'w') as file:
