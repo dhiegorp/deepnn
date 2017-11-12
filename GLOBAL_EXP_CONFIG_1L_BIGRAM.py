@@ -5,7 +5,7 @@ from ENVIRONMENT import *
 
 environment = Environment()
 base_path = environment.base_path
-ds_path = environment.dataset_base_path
+ds_path = environment.dataset_base_path    
 
 
 GLOBAL = {
