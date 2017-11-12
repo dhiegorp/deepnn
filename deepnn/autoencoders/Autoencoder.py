@@ -39,6 +39,8 @@ class Autoencoder:
 		""" validate the encoder layers configured 
 			raise value errors if __encoder_layers_config was not setted or if list len is 'le' than one
 		"""
+		print('self.__encoder_layers_config ', self.__encoder_layers_config)
+
 		if not self.__encoder_layers_config:
 			raise ValueError('A list with the numbers of neurons in each layer is required.')
 
@@ -95,7 +97,7 @@ class Autoencoder:
 	
  
 	def __compile(self):
-		self.autoencoder.compile(loss=self.__loss_function, optimizer=self.__optimizer)
+		self.autoencoder.compile(loss=self.__loss_function, optimizer=self.__optimizer, metrics=[ 'accuracy'])
 
 	
 		
