@@ -78,7 +78,7 @@ class Trial:
 			callbacks = get_ae_callbacks(self.__name, self.__config['checkpoints_dir'], self.__config['tensorflow_dir']) )
 
 		logging.debug("trained and evaluated!")	
-		logging.debug("MODEL FOR AE {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__ae_model.summary)
+		logging.debug("MODEL FOR AE {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__ae_model.summary))
 
 		try: 
 			logging.debug("Training history: \n" + str(self.__ae_model.training_history.history) )
