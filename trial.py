@@ -117,7 +117,7 @@ class Trial:
 
 		logging.debug("trained!")
 
-		logging.debug("MODEL FOR MLP {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__mlp_model.summary)
+		logging.debug("MODEL FOR MLP {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__mlp_model.summary))
 			
 		
 		try: 
