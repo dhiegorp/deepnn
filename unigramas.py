@@ -18,7 +18,7 @@ def configure_trials(name_pattern, input_dim,  data, config, hidden_layers):
 		print('ae_bigrama_1L_',i, ' - hidden:', hidden_layer)
 		topol = [input_dim]
 		topol.extend(hidden_layer) 
-		trials.append( Trial('ae_bigrama_1L_' + str(i), topol, data=data, config_dict=config) )
+		trials.append( Trial('ae_unigrama_1L_' + str(i), topol, data=data, config_dict=config) )
 	return trials
 
 
