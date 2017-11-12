@@ -21,6 +21,17 @@ def configure_trials(name_pattern, input_dim,  data, config, hidden_layers):
 		trials.append( Trial('ae_unigrama_1L_' + str(i), topol, data=data, config_dict=config) )
 	return trials
 
+def alt_execute_trials(name_pattern, input_dim,  data, config, hidden_layers):
+	for i, hidden_layer in enumerate(hidden_layers):
+		print('ae_unigrama_1L_',i, ' - hidden:', hidden_layer)
+		topol = [input_dim]
+		topol.extend(hidden_layer) 
+		experiment = Trial('ae_unigrama_1L_' + str(i), topol, data=data, config_dict=config)
+		experiment()
+		del experiment
+		del topol
+
+
 
 def execute_trials(trials):
 	for i, trial_exec in enumerate(trials):
@@ -45,13 +56,8 @@ def nn_1l():
 	print('nn1l hidden configs: ', hidden_configs)
 
 	load_datasource('malware_selected_1gram', GL1)
+	alt_execute_trials('ae_unigrama_1L_', 96, data, GL1, hidden_configs)
 
-	trials = configure_trials('ae_unigrama_1L_', 96, data, GL1, hidden_configs)
-
-	if not trials:
-		print('No trials configured for hidden_configs ', str(hidden_configs))
-	else:
-		execute_trials(trials)
 
 
 
