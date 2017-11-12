@@ -78,7 +78,8 @@ class Trial:
 			callbacks = get_ae_callbacks(self.__name, self.__config['checkpoints_dir'], self.__config['tensorflow_dir']) )
 
 		logging.debug("trained and evaluated!")	
-			
+		logging.debug("MODEL FOR AE {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__ae_model.summary)
+
 		try: 
 			logging.debug("Training history: \n" + str(self.__ae_model.training_history.history) )
 		except:
@@ -114,7 +115,10 @@ class Trial:
 			store_history=self.__config['store_history'],
 			callbacks=get_mlp_callbacks(self.__name, self.__config['checkpoints_dir'], self.__config['tensorflow_dir']) )
 
-		logging.debug("trained!")	
+		logging.debug("trained!")
+
+		logging.debug("MODEL FOR MLP {}, TOPOLOGY:\n\t\t{}".format(self.__network_name, self.__mlp_model.summary)
+			
 		
 		try: 
 			logging.debug("Training history: \n" + str(self.__ae_model.training_history.history) )

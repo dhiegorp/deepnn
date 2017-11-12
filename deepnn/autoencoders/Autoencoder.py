@@ -97,7 +97,8 @@ class Autoencoder:
 	
  
 	def __compile(self):
-		self.autoencoder.compile(loss=self.__loss_function, optimizer=self.__optimizer, metrics=[ 'accuracy'])
+		self.__autoencoder.compile(loss=self.__loss_function, optimizer=self.__optimizer, metrics=[ 'accuracy'])
+		self.__summary = self.__autoencoder.summary()
 
 	
 		
@@ -187,6 +188,10 @@ class Autoencoder:
 	@property
 	def training_history(self):
 		return self.__history
+
+	@property
+	def summary(self):
+		return self.__summary
 
 
 

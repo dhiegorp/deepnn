@@ -46,6 +46,7 @@ class EncoderWithClassifier:
 
 	def __compile(self):
 		self.__classifier.compile(loss=self.__loss_function, optimizer=self.__optimizer, metrics=['acc'])
+		self.__summary = self.__classifier.summary()
 
 
 
@@ -106,5 +107,9 @@ class EncoderWithClassifier:
 	@property
 	def classifier(self):
 		return self.__classifier
+
+	@property
+	def summary(self):
+		return self.__summary
 
 					
