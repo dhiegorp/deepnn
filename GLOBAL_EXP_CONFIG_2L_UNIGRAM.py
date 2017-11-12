@@ -11,12 +11,12 @@ ds_path = environment.dataset_base_path
 GLOBAL = {
 	'numpy_seed': 666,
 	'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s',
-	'log_dir': base_path + '/logs/1layer/bigram/',
-	'reports_dir': base_path + '/reports/1layer/bigram/',
-	'fullds_reports_dir': base_path + '/reports/1layer/bigram/fullds/',
-	'tensorflow_dir': base_path + '/tensorflow/1layer/bigram/',
-	'checkpoints_dir':base_path + '/checkpoints/1layer/bigram/',
-	'executed_path':base_path + '/executed/1layer/bigram/',
+	'log_dir': base_path + '/logs/2layers/unigram/',
+	'reports_dir': base_path + '/reports/2layers/unigram/',
+	'fullds_reports_dir': base_path + '/reports/2layers/unigram/fullds/',
+	'tensorflow_dir': base_path + '/tensorflow/2layers/unigram/',
+	'checkpoints_dir':base_path + '/checkpoints/2layers/unigram/',
+	'executed_path':base_path + '/executed/2layers/unigram/',
 	'data_dir': ds_path + '/',
 	'fullds_data_dir': ds_path + '/',
 	#'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
@@ -24,7 +24,7 @@ GLOBAL = {
 	
 
 	'data_target_list' : [1,2,3,4,5,6,7,8,9],
-	'epochs': 200,
+	'epochs': 1000,
 	'batch': 32,
 	'store_history' : True,
 	'shuffle_batches' : True,
@@ -46,10 +46,14 @@ GLOBAL = {
 
 
 }
- 
-  
-MAP_DIMS = {
 
+
+MAP_DIMS = {
+	'AE_UNIGRAMA_2L_UNDER_01' : [96,  28, 26, 9],
+	'AE_UNIGRAMA_2L_UNDER_02' : [96,  76,  69, 9],
+	'AE_UNIGRAMA_2L_UNDER_03' : [96, 86, 78, 9],
+	'AE_UNIGRAMA_2L_OVER_04'  : [96, 134, 122, 9],
+	'AE_UNIGRAMA_2L_OVER_05'  : [96,  172,  156, 9]
 }
 
 def get_ae_callbacks(network_name):
@@ -68,3 +72,4 @@ def get_mlp_callbacks(network_name):
 		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=1, write_graph=True)	
 	]
 	return mlp_callbacks
+
