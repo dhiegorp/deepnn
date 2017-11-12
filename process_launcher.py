@@ -37,7 +37,7 @@ def load():
 	logging.debug(str(len(filelist)) + ' item(s) found for search_term ' + search_term) 
 
 	for filename in filelist:
-			logging.debug('Registering ' + filename + ' for parallel execution.')
+			logging.debug('Registering ' + filename + ' for execution.')
 			processes.append( filename )
 	
 
