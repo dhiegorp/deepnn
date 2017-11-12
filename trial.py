@@ -73,7 +73,7 @@ class Trial:
 			feature_validation=self.__data['valx'], 
 			epochs=self.__config['epochs'], 
 			batch_size=self.__config['batch'], 
-			shuffle=self.__config['shuffle_batches'], 
+			shuffle=self.__config['shuffle_batches'],   
 			store_history=self.__config['store_history'], 
 			callbacks = get_ae_callbacks(self.__name, self.__config['checkpoints_dir'], self.__config['tensorflow_dir']) )
 
