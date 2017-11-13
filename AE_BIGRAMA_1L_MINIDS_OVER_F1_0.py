@@ -37,7 +37,7 @@ def header_log():
 
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
-	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram_mini', resolve_names=True)
+	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_2gram_mini', resolve_names=True)
 	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
