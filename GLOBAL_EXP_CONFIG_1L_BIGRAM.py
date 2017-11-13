@@ -49,7 +49,7 @@ GLOBAL = {
  
   
 MAP_DIMS = {
-
+	'AE_BIGRAMA_1L_MINIDS_OVER_F1_0' : [9216, 9216]
 }
 
 def get_ae_callbacks(network_name):
