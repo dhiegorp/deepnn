@@ -20,7 +20,7 @@ layers = MAP_DIMS[network_name]
 logging.basicConfig(format=GLOBAL['log_format'], filename= GLOBAL['log_dir'] + network_name + '.log', level=logging.DEBUG)
 
 load_ds = None
-ae_model = None
+ae_model = None 
 mlp_model = None
 classifier_predictions = None
 trainx, trainy, valx, valy = None, None, None, None
