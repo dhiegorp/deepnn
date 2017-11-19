@@ -1,0 +1,94 @@
+OrderedDict([('cm', Predicted    0    1    2    3  4    5   6    7    8  __all__
+Actual                                                      
+0          352   10    0    0  0    5   1   17    1      386
+1            4  604    1    1  0    3   2    3    2      620
+2            0    0  730    2  0    4   0    0    0      736
+3            0    2    8  106  0    3   0    0    0      119
+4            0    0    0    0  2    4   0    3    2       11
+5            0    2   17    7  0  155   0    5    2      188
+6            0    1    0    0  0    0  92    7    0      100
+7            6    5    3    0  0    1   0  291    1      307
+8            1    7    0    1  1   17   0    5  222      254
+__all__    363  631  759  117  3  192  95  331  230     2721), ('overall', OrderedDict([('Accuracy', 0.93862550532892319), ('95% CI', (0.92894172314892054, 0.94735173995728661)), ('No Information Rate', 'ToDo'), ('P-Value [Acc > NIR]', 0.0), ('Kappa', 0.92543725356029993), ("Mcnemar's Test P-Value", 'ToDo')])), ('class', Classes                                         0          1           2  \
+Population                                   2721       2721        2721   
+P: Condition positive                         386        620         736   
+N: Condition negative                        2335       2101        1985   
+Test outcome positive                         363        631         759   
+Test outcome negative                        2358       2090        1962   
+TP: True Positive                             352        604         730   
+TN: True Negative                            2324       2074        1956   
+FP: False Positive                             11         27          29   
+FN: False Negative                             34         16           6   
+TPR: (Sensitivity, hit rate, recall)     0.911917   0.974194    0.991848   
+TNR=SPC: (Specificity)                   0.995289   0.987149     0.98539   
+PPV: Pos Pred Value (Precision)          0.969697   0.957211    0.961792   
+NPV: Neg Pred Value                      0.985581   0.992344    0.996942   
+FPR: False-out                         0.00471092   0.012851   0.0146096   
+FDR: False Discovery Rate                0.030303  0.0427892   0.0382082   
+FNR: Miss Rate                          0.0880829  0.0258065  0.00815217   
+ACC: Accuracy                            0.983462   0.984197    0.987137   
+F1 score                                  0.93992   0.965627    0.976589   
+MCC: Matthews correlation coefficient    0.930932   0.955431    0.967942   
+Informedness                             0.907206   0.961343    0.977238   
+Markedness                               0.955278   0.949555    0.958734   
+Prevalence                                0.14186   0.227857    0.270489   
+LR+: Positive likelihood ratio            193.575    75.8067     67.8903   
+LR-: Negative likelihood ratio          0.0884998  0.0261424  0.00827304   
+DOR: Diagnostic odds ratio                2187.29    2899.76     8206.21   
+FOR: False omission rate                 0.014419  0.0076555   0.0030581   
+
+Classes                                         3            4          5  \
+Population                                   2721         2721       2721   
+P: Condition positive                         119           11        188   
+N: Condition negative                        2602         2710       2533   
+Test outcome positive                         117            3        192   
+Test outcome negative                        2604         2718       2529   
+TP: True Positive                             106            2        155   
+TN: True Negative                            2591         2709       2496   
+FP: False Positive                             11            1         37   
+FN: False Negative                             13            9         33   
+TPR: (Sensitivity, hit rate, recall)     0.890756     0.181818   0.824468   
+TNR=SPC: (Specificity)                   0.995772     0.999631   0.985393   
+PPV: Pos Pred Value (Precision)          0.905983     0.666667   0.807292   
+NPV: Neg Pred Value                      0.995008     0.996689   0.986951   
+FPR: False-out                         0.00422752  0.000369004  0.0146072   
+FDR: False Discovery Rate               0.0940171     0.333333   0.192708   
+FNR: Miss Rate                           0.109244     0.818182   0.175532   
+ACC: Accuracy                             0.99118     0.996325   0.974274   
+F1 score                                 0.898305     0.285714   0.815789   
+MCC: Matthews correlation coefficient     0.89373     0.346937   0.802014   
+Informedness                             0.886529     0.181449   0.809861   
+Markedness                               0.900991     0.663355   0.794243   
+Prevalence                              0.0437339   0.00404263  0.0690922   
+LR+: Positive likelihood ratio            210.704      492.727    56.4426   
+LR-: Negative likelihood ratio           0.109707     0.818484   0.178134   
+DOR: Diagnostic odds ratio                 1920.6          602    316.855   
+FOR: False omission rate               0.00499232   0.00331126  0.0130486   
+
+Classes                                         6           7           8  
+Population                                   2721        2721        2721  
+P: Condition positive                         100         307         254  
+N: Condition negative                        2621        2414        2467  
+Test outcome positive                          95         331         230  
+Test outcome negative                        2626        2390        2491  
+TP: True Positive                              92         291         222  
+TN: True Negative                            2618        2374        2459  
+FP: False Positive                              3          40           8  
+FN: False Negative                              8          16          32  
+TPR: (Sensitivity, hit rate, recall)         0.92    0.947883    0.874016  
+TNR=SPC: (Specificity)                   0.998855     0.98343    0.996757  
+PPV: Pos Pred Value (Precision)          0.968421    0.879154    0.965217  
+NPV: Neg Pred Value                      0.996954    0.993305    0.987154  
+FPR: False-out                          0.0011446     0.01657  0.00324281  
+FDR: False Discovery Rate               0.0315789    0.120846   0.0347826  
+FNR: Miss Rate                               0.08   0.0521173    0.125984  
+ACC: Accuracy                            0.995957    0.979419      0.9853  
+F1 score                                  0.94359    0.912226    0.917355  
+MCC: Matthews correlation coefficient    0.941828    0.901406    0.910659  
+Informedness                             0.918855    0.931313    0.870773  
+Markedness                               0.965375     0.87246    0.952371  
+Prevalence                              0.0367512    0.112826    0.093348  
+LR+: Positive likelihood ratio            803.773     57.2047     269.525  
+LR-: Negative likelihood ratio          0.0800917   0.0529954    0.126394  
+DOR: Diagnostic odds ratio                10035.7     1079.43     2132.41  
+FOR: False omission rate               0.00304646  0.00669456   0.0128462  )])
