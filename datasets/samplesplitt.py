@@ -236,7 +236,7 @@ def main():
 
 	process_list = [
 		#('e:/research/malware_dataset/malware_selected_1gram.pkl', 'e:/research/malware_dataset/malware_selected_1gram_mini.pkl'),
-		('c:/Users/dhieg/research/malware_dataset/malware_selected_2gram.pkl', 'c:/Users/dhieg/research/malware_dataset/malware_selected_2gram_mini_2.pkl'),
+		('/home/dhiegorp/malware_dataset/malware_selected_2gram.pkl', 'c:/Users/dhieg/research/malware_dataset/malware_selected_2gram_mini_2.pkl'),
 		#('e:/research/malware_dataset/malware_selected_3gram.pkl', 'e:/research/malware_dataset/malware_selected_3gram_mini.pkl')
 	]	
 
@@ -251,12 +251,12 @@ def main():
 		#ss.process()
 		#ss = CSVSampleSplitter(item)
 
-	ss = CSVSampleSplitter('c:/Users/dhieg/research/malware_dataset/', 
+	ss = CSVSampleSplitter('/home/dhiegorp/malware_dataset/', 
 		'malware_selected_2gram',  
 		factor=TOTAL_SLICE, 
 		train_factor=TRAIN_SPLIT, 
 		target_list=CLASS_LIST, 
-		dump_to='c:/Users/dhieg/research/malware_dataset/malware_selected_2gram_mini2')
+		dump_to='/home/dhiegorp/malware_dataset/malware_selected_2gram_mini2')
 
 
 
