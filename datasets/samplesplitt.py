@@ -233,6 +233,7 @@ class SampleSplitter:
 
 def main():
 
+	print('Oh my new version!')
 
 	process_list = [
 		#('e:/research/malware_dataset/malware_selected_1gram.pkl', 'e:/research/malware_dataset/malware_selected_1gram_mini.pkl'),
