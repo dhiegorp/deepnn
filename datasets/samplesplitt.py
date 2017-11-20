@@ -247,11 +247,6 @@ def main():
 	RESHUFFLE = False
 
 
-	#for item in process_list:
-		#ss = SampleSplitter(item[0], factor=TOTAL_SLICE, train_factor=TRAIN_SPLIT, target_list = CLASS_LIST,  dump_to=item[1], reshuffle=RESHUFFLE)
-		#ss.process()
-		#ss = CSVSampleSplitter(item)
-
 	ss = CSVSampleSplitter('/home/dhiegorp/malware_dataset/', 
 		'malware_selected_2gram',  
 		factor=TOTAL_SLICE, 
@@ -259,7 +254,7 @@ def main():
 		target_list=CLASS_LIST, 
 		dump_to='/home/dhiegorp/malware_dataset/malware_selected_2gram_mini2')
 
-
+	ss.process()
 
 if __name__ == '__main__':
 	main()
