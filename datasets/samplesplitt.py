@@ -247,15 +247,16 @@ def main():
 	CLASS_LIST = [1,2,3,4,5,6,7,8,9]
 	RESHUFFLE = False
 
-
+	print('loading data...')
 	ss = CSVSampleSplitter('/home/dhiegorp/malware_dataset/', 
 		'malware_selected_2gram',  
 		factor=TOTAL_SLICE, 
 		train_factor=TRAIN_SPLIT, 
 		target_list=CLASS_LIST, 
 		dump_to='/home/dhiegorp/malware_dataset/malware_selected_2gram_mini2')
-
+	print('starting process...')
 	ss.process()
+	print('done!')
 
 if __name__ == '__main__':
 	main()
