@@ -48,7 +48,7 @@ class CSVSampleSplitter:
 		for c in self.__target_list:
 			cnt[c] = 0
 
-		return c nt
+		return cnt
 
 	def __count(self):
 		
