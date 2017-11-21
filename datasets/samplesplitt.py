@@ -48,7 +48,7 @@ class CSVSampleSplitter:
 		for c in self.__target_list:
 			cnt[c] = 0
 
-		return cnt
+		return c nt
 
 	def __count(self):
 		
@@ -56,6 +56,7 @@ class CSVSampleSplitter:
 
 		for i in self.__yt:
 			for c,v in cnt.items():
+				print("c:",len(c)," i:", len(i) )
 				if c == i:
 					cnt[c] = v + 1
 
