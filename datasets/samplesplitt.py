@@ -96,7 +96,7 @@ class CSVSampleSplitter:
 			acc = 1
 			for num, row in enumerate(self.__Xt):
 				print('self.__yt[num]:',self.__yt[num], ' k:', k, ' v[train]:', v['train'])
-				if self.__yt[num] == k and acc < v['train']:
+				if decode_onehot(self.__yt[num], adjust=1) == k and acc < v['train']:
 					xtra.append(row)
 					ytra.append(self.__yt[num])
 					acc = acc + 1
