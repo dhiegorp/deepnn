@@ -74,7 +74,16 @@ class CSVSampleSplitter:
 					cnt[c] = v + 1		
 
 		cc = {}	
-		print(cnt)
+
+		for k,v in cnt.items():
+			final_num = math.ceil(v * self.__factor)
+			train_factor = math.ceil(final_num * self.__train_factor)
+			cc[k] = {'total': v, 'train': train_factor, 'validation': math.fabs(final_num - train_factor) }
+
+		print('returning ', cc)
+		return cc
+
+
 	def __get_samples(self, counter):
 		xval = []
 		yval = []
