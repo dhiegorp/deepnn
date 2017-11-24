@@ -1,6 +1,12 @@
 from dataset_loader import *
 import math
+import numpy as np
 from sklearn.externals import joblib
+
+def decode_onehot(vect, adjust):
+	decoded = np.argmax(vect)
+	if adjust:
+		decoded = decoded + adjust
 
 class CSVSampleSplitter:
 	def __init__(self, path, dataset_filename_pattern, factor, train_factor, target_list, dump_to=None, reshuffle=False):
@@ -56,13 +62,13 @@ class CSVSampleSplitter:
 
 		for i in self.__yt:
 			for c,v in cnt.items():
-				print("c:",len(c)," i:", len(i) )
-				if c == i:
+				
+				if c == decode_onehot(i):
 					cnt[c] = v + 1
 
 		for i in self.__yv:
 			for c,v in cnt.items():
-				if c == i:
+				if c == decode_onehot(i):
 					cnt[c] = v + 1		
 
 		cc = {}	
