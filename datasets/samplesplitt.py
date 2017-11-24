@@ -3,7 +3,7 @@ import math
 import numpy as np
 from sklearn.externals import joblib
 
-def decode_onehot(vect, adjust):
+def decode_onehot(vect, adjust=None):
 	decoded = np.argmax(vect)
 	if adjust:
 		decoded = decoded + adjust
@@ -64,12 +64,12 @@ class CSVSampleSplitter:
 		for i in self.__yt:
 			for c,v in cnt.items():
 				
-				if c == decode_onehot(i):
+				if c == decode_onehot(i, adjust=1):
 					cnt[c] = v + 1
 
 		for i in self.__yv:
 			for c,v in cnt.items():
-				if c == decode_onehot(i):
+				if c == decode_onehot(i, adjust=1):
 					cnt[c] = v + 1		
 
 		cc = {}	
