@@ -9,7 +9,7 @@ def decode_onehot(vect, adjust):
 		decoded = decoded + adjust
 
 class CSVSampleSplitter:
-	def __init__(self, path, dataset_filename_pattern, factor, train_factor, target_list, dump_to=None, reshuffle=False):
+	def __init__(self, path, dataset_filename_pattern, factor, train_factor, target_list, dump_to=None, file_pattern_dump=None, reshuffle=False):
 			self.__path = path
 			self.__dataset_filename_pattern = dataset_filename_pattern
 			self.__factor = factor
@@ -17,6 +17,7 @@ class CSVSampleSplitter:
 			self.__reshuffle = reshuffle
 			self.__target_list = target_list
 			self.__dump_to= dump_to
+			self._file_pattern_dump = file_pattern_dump
 			self.__validate()
 
 	def __validate(self):
@@ -107,9 +108,12 @@ class CSVSampleSplitter:
 		print('xvfinal> ', self.__xvfinal.shape)
 		print('yvfinal> ', self.__yvfinal.shape)
 
-		ret = ( np.c_[self.__xtfinal, self.__ytfinal] , np.c_[self.__xvfinal, self.__yvfinal])
-		
-		joblib.dump(ret, self.__dump_to)
+		#ret = ( np.c_[self.__xtfinal, self.__ytfinal] , np.c_[self.__xvfinal, self.__yvfinal])
+		#joblib.dump(ret, self.__dump_to)
+		np.savetxt(self.__dump_to + self._file_pattern_dump + '_train_feat.csv', self.__xtfinal, delimiter=',')
+		np.savetxt(self.__dump_to + self._file_pattern_dump + '_train_target.csv', self.__ytfinal, delimiter=',')
+		np.savetxt(self.__dump_to + self._file_pattern_dump + '_test_feat.csv', self.__xvfinal, delimiter=',')
+		np.savetxt(self.__dump_to + self._file_pattern_dump + '_test_target.csv', self.__yvfinal, delimiter=',')
  
 
 
@@ -258,8 +262,9 @@ def main():
 		'malware_selected_2gram',  
 		factor=TOTAL_SLICE, 
 		train_factor=TRAIN_SPLIT, 
-		target_list=CLASS_LIST, 
-		dump_to='/home/dhiegorp/malware_dataset/malware_selected_2gram_mini2')
+		target_list=CLASS_LIST,
+		file_pattern_dump='malware_selected_2gram_mini2',
+		dump_to='/home/dhiegorp/malware_dataset/')
 	print('starting process...')
 	ss.process()
 	print('done!')
