@@ -7,6 +7,7 @@ def decode_onehot(vect, adjust=None):
 	decoded = np.argmax(vect)
 	if adjust:
 		decoded = decoded + adjust
+	return decoded
 
 class CSVSampleSplitter:
 	def __init__(self, path, dataset_filename_pattern, factor, train_factor, target_list, dump_to=None, file_pattern_dump=None, reshuffle=False):
