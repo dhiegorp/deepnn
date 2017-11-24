@@ -103,7 +103,7 @@ class CSVSampleSplitter:
 
 			acc = 1
 			for num, row in enumerate(self.__Xv):
-				if self.__yv[num] == k and acc < v['validation']:
+				if decode_onehot(self.__yv[num], adjust=1) == k and acc < v['validation']:
 					xval.append(row)
 					yval.append(self.__yv[num])
 					acc = acc + 1
