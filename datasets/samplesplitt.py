@@ -74,7 +74,7 @@ class CSVSampleSplitter:
 					cnt[c] = v + 1		
 
 		cc = {}	
-
+		print(cnt)
 	def __get_samples(self, counter):
 		xval = []
 		yval = []
