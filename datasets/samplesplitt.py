@@ -95,6 +95,7 @@ class CSVSampleSplitter:
 			print('getting ', v['train'], ' samples for class ', k)
 			acc = 1
 			for num, row in enumerate(self.__Xt):
+				print('self.__yt[num]:',self.__yt[num], ' k:', k, ' v[train]:', v['train'])
 				if self.__yt[num] == k and acc < v['train']:
 					xtra.append(row)
 					ytra.append(self.__yt[num])
