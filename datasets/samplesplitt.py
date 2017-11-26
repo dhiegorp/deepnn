@@ -267,7 +267,7 @@ def main():
 		#('e:/research/malware_dataset/malware_selected_3gram.pkl', 'e:/research/malware_dataset/malware_selected_3gram_mini.pkl')
 	]	
 
-	TOTAL_SLICE = 0.05
+	TOTAL_SLICE = 0.1
 	TRAIN_SPLIT = 0.75
 	CLASS_LIST = [1,2,3,4,5,6,7,8,9]
 	RESHUFFLE = False
