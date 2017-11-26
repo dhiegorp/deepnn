@@ -92,21 +92,25 @@ class CSVSampleSplitter:
 
 
 		for k,v in counter.items():
-			print('getting ', v['train'], ' samples for class ', k)
+			print('training :: getting ', v['train'], ' samples for class ', k)
 			acc = 1
 			for num, row in enumerate(self.__Xt):
-				print('self.__yt[num]:',self.__yt[num], ' k:', k, ' v[train]:', v['train'])
 				if decode_onehot(self.__yt[num], adjust=1) == k and acc < v['train']:
 					xtra.append(row)
 					ytra.append(self.__yt[num])
 					acc = acc + 1
 
+			print('training :: ending for class ', k, ' on training! (', v['train'], ' -xtra: ', len(xtra), ' acc ', acc , ' )')
+
+			print('validation :: getting ', v['validation'], ' samples for class ', k)
 			acc = 1
 			for num, row in enumerate(self.__Xv):
 				if decode_onehot(self.__yv[num], adjust=1) == k and acc < v['validation']:
 					xval.append(row)
 					yval.append(self.__yv[num])
 					acc = acc + 1
+			print('validation :: ending for class ', k, ' on validation! (', v['validation'], ' -xval: ', len(xval), ' acc ', acc , ' )')
+
 			
 
 		self.__xtfinal = np.array(xtra)
