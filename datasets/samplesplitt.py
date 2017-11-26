@@ -50,6 +50,7 @@ class CSVSampleSplitter:
 			""".format(self.__path, self.__dataset_filename_pattern, str(self.__Xt.shape), str(self.__yt.shape), str(self.__Xv.shape), str(self.__yv.shape))
 		print(msg)
 
+
 	def __gen_counter_obj(self):
 		cnt = {}
 
@@ -76,8 +77,12 @@ class CSVSampleSplitter:
 		cc = {}	
 
 		for k,v in cnt.items():
+
 			final_num = math.ceil(v * self.__factor)
 			train_factor = math.ceil(final_num * self.__train_factor)
+			validation_samples = math.fabs(final_num - train_factor)
+			print(':::: for class ', k, 'total sliced:', final_num, ', training:', train_factor, ' - validation:', validation_samples)
+
 			cc[k] = {'total': v, 'train': train_factor, 'validation': math.fabs(final_num - train_factor) }
 
 		print('returning ', cc)
@@ -267,7 +272,7 @@ def main():
 		#('e:/research/malware_dataset/malware_selected_3gram.pkl', 'e:/research/malware_dataset/malware_selected_3gram_mini.pkl')
 	]	
 
-	TOTAL_SLICE = 0.1
+	TOTAL_SLICE = 0.15
 	TRAIN_SPLIT = 0.75
 	CLASS_LIST = [1,2,3,4,5,6,7,8,9]
 	RESHUFFLE = False
