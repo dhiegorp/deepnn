@@ -24,7 +24,7 @@ GLOBAL = {
 	
 
 	'data_target_list' : [1,2,3,4,5,6,7,8,9],
-	'epochs': 200,
+	'epochs': 1000,
 	'batch': 32,
 	'store_history' : True,
 	'shuffle_batches' : True,
@@ -49,18 +49,28 @@ GLOBAL = {
  
   
 MAP_DIMS = {
-	'AE_UNIGRAMA_8L_UNDER_01' :  [96, 28,  26, 24, 22, 20, 19, 17, 15, 9],
-	'AE_UNIGRAMA_8L_UNDER_02' :  [96, 76, 69, 63, 56, 49, 43, 36, 29, 9],
-	'AE_UNIGRAMA_8L_UNDER_03':   [96, 86, 78, 71, 63, 55, 48, 40, 32, 9],
-	'AE_UNIGRAMA_8L_OVER_04':    [96, 134, 122, 109, 97, 84, 72, 59, 47, 9], 
-	'AE_UNIGRAMA_8L_OVER_05' :   [96, 172, 156, 139, 123, 107, 91, 74, 58, 9]
+	'AE_UNIGRAMA_8L_9FULLDS_UNDER_01' :  [96, 28,  26, 24, 22, 20, 19, 17, 15, 9],
+	'AE_UNIGRAMA_8L_9FULLDS_UNDER_02' :  [96, 76, 69, 63, 56, 49, 43, 36, 29, 9],
+	'AE_UNIGRAMA_8L_9FULLDS_UNDER_03':   [96, 86, 78, 71, 63, 55, 48, 40, 32, 9],
+	'AE_UNIGRAMA_8L_9FULLDS_OVER_04':    [96, 134, 122, 109, 97, 84, 72, 59, 47, 9], 
+	'AE_UNIGRAMA_8L_9FULLDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91, 74, 58, 9],
+	'AE_UNIGRAMA_8L_FULLDS_UNDER_01' :  [96, 28,  26, 24, 22, 20, 19, 17, 15],
+	'AE_UNIGRAMA_8L_FULLDS_UNDER_02' :  [96, 76, 69, 63, 56, 49, 43, 36, 29],
+	'AE_UNIGRAMA_8L_FULLDS_UNDER_03':   [96, 86, 78, 71, 63, 55, 48, 40, 32],
+	'AE_UNIGRAMA_8L_FULLDS_OVER_04':    [96, 134, 122, 109, 97, 84, 72, 59, 47], 
+	'AE_UNIGRAMA_8L_FULLDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91, 74, 58],
+	'AE_UNIGRAMA_8L_MINIDS_UNDER_01' :  [96, 28,  26, 24, 22, 20, 19, 17, 15],
+	'AE_UNIGRAMA_8L_MINIDS_UNDER_02' :  [96, 76, 69, 63, 56, 49, 43, 36, 29],
+	'AE_UNIGRAMA_8L_MINIDS_UNDER_03':   [96, 86, 78, 71, 63, 55, 48, 40, 32],
+	'AE_UNIGRAMA_8L_MINIDS_OVER_04':    [96, 134, 122, 109, 97, 84, 72, 59, 47], 
+	'AE_UNIGRAMA_8L_MINIDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91, 74, 58]	
 }
 
 def get_ae_callbacks(network_name):
 	ae_callbacks = [
 		EarlyStopping(monitor='val_loss', min_delta=0.01, patience=100, verbose=1, mode='min'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '.h5', monitor='val_loss', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=1, write_graph=True)	
+		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=0, write_graph=False)	
 	]
 	return ae_callbacks
 
@@ -69,7 +79,7 @@ def get_mlp_callbacks(network_name):
 	mlp_callbacks = [
 		EarlyStopping(monitor='acc', min_delta=0.01, patience=100, verbose=1, mode='max'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '_mlp.h5', monitor='val_acc', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=1, write_graph=True)	
+		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=0, write_graph=False)	
 	]
 	return mlp_callbacks
 

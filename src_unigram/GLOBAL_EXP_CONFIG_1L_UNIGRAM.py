@@ -16,12 +16,14 @@ GLOBAL = {
 	'tensorflow_dir': base_path + '/tensorflow/1layer/unigram/',
 	'checkpoints_dir':base_path + '/checkpoints/1layer/unigram/',
 	'executed_path':base_path + '/executed/1layer/unigram/',
-	'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
-	'fullds_data_dir':ds_path + '/malware_selected_1gram.pkl',
+	'data_dir': ds_path + '/',
+	'fullds_data_dir': ds_path + '/',
+	#'data_dir': ds_path + '/malware_selected_1gram_mini.pkl',
+	#'fullds_data_dir':ds_path + '/malware_selected_1gram.pkl',
 	
 
 	'data_target_list' : [1,2,3,4,5,6,7,8,9],
-	'epochs': 200,
+	'epochs': 1000,
 	'batch': 32,
 	'store_history' : True,
 	'shuffle_batches' : True,
@@ -72,7 +74,7 @@ def get_ae_callbacks(network_name):
 	ae_callbacks = [
 		EarlyStopping(monitor='val_loss', min_delta=0.01, patience=100, verbose=1, mode='min'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '.h5', monitor='val_loss', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=1, write_graph=True)	
+		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=0, write_graph=False)	
 	]
 	return ae_callbacks
 
@@ -81,7 +83,7 @@ def get_mlp_callbacks(network_name):
 	mlp_callbacks = [
 		EarlyStopping(monitor='acc', min_delta=0.01, patience=100, verbose=1, mode='max'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '_mlp.h5', monitor='val_acc', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=1, write_graph=True)	
+		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=0, write_graph=False)	
 	]
 	return mlp_callbacks
 
