@@ -58,8 +58,11 @@ def nn_1l():
 	load_datasource('malware_selected_1gram', GL1)
 	#alt_execute_trials('ae_unigrama_1L_', 96, data, GL1, hidden_configs)
 
-	Trial('ae_unigrama_1L_' + str(18), [96,182], data=data, config_dict=GL1)()
-	Trial('ae_unigrama_1L_' + str(19), [96,192], data=data, config_dict=GL1)()
+	try:
+		Trial('ae_unigrama_apaga1L_' + str(1), [96,1], data=data, config_dict=GL1)()
+	except Exception as error:
+		print(str(error))
+	Trial('ae_unigrama_apaga2L_' + str(2), [96,2], data=data, config_dict=GL1)()
 
 def main():
 	nn_1l()	
