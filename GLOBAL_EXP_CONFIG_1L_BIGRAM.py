@@ -24,7 +24,8 @@ GLOBAL = {
 	
 
 	'data_target_list' : [1,2,3,4,5,6,7,8,9],
-	'epochs': 50,
+	#'epochs': 50,
+	'epochs': 200,
 	'batch': 32,
 	'store_history' : True,
 	'shuffle_batches' : True,
