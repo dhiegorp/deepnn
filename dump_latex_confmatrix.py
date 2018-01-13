@@ -23,7 +23,7 @@ CONFUSION_MATRIX_LATEX_FMT = """
 """
 
 TABLE_LABEL_FMT = "conf:{}"
-TABLE_CAPTION_FMT = "Resultado do experimento {}, em matriz de confusão, na fase de validação do modelo."
+TABLE_CAPTION_FMT = "Matriz de Confusão de {}, computada na fase de validação do modelo."
 
 
 
@@ -44,9 +44,8 @@ def confusion_matrix_latex_fmt(path):
 
 def create_confusion_matrix(matrix, experiment_name):
 	cf = tuple(np.array(matrix).reshape(-1,))
-	xp = experiment_name_for_latex(experiment_name)
-	caption = TABLE_CAPTION_FMT.format(xp)
-	label = TABLE_LABEL_FMT.format(xp)
+	caption = TABLE_CAPTION_FMT.format(experiment_name_for_latex(experiment_name))
+	label = TABLE_LABEL_FMT.format(experiment_name)
 
 	return (caption, label) + cf
 
@@ -82,6 +81,17 @@ def test_conf_matrix_parser(name):
 
 if __name__ == '__main__':
 	
-	file_fullpath = 'C:/Users/dhieg/research/research_msc/reports/1layer/unigram/fullds/AE_UNIGRAMA_1L_OVER_F1_0.confusion_matrix.txt'
-	seek_and_destroy('C:/Users/dhieg/research/research_msc/reports/1layer/unigram/fullds/')
+	mapped_path = [
+			#'C:/Users/dhieg/research/deepnn/reports/2layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/3layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/4layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/5layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/6layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/7layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/8layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/9layers/unigram/',
+			'C:/Users/dhieg/research/deepnn/reports/10layers/unigram/',	
+	]
 
+	for path in mapped_path:
+		seek_and_destroy(path)
