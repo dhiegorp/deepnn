@@ -2,7 +2,7 @@ from pathlib import Path
 
 str_pattern = "{}\t\t[{}]\t"
 
-function verify(imp_global):
+def verify(imp_global):
 	
 	for x in imp_global.MAP_DIMS:
 		path_to_file = b1.executed_path + x[0]
@@ -12,7 +12,7 @@ function verify(imp_global):
 
 		print(str_pattern.format(x[0], exists))
 
-function rastrear_execucoes_bigramas():
+def rastrear_execucoes_bigramas():
 	import GLOBAL_1L_BIGRAM as b1
 	import GLOBAL_2L_BIGRAM as b2
 	import GLOBAL_3L_BIGRAM as b3
