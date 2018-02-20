@@ -36,3 +36,10 @@ def rastrear_execucoes_bigramas():
 	verify(b8)
 	verify(b9)
 	verify(b10)
+
+
+def main():
+	rastrear_execucoes_bigramas()
+
+if __name__ == '__main__':
+	main()
