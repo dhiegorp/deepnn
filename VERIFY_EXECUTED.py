@@ -13,19 +13,20 @@ def verify(imp_global):
 		print(str_pattern.format(x[0], exists))
 
 def rastrear_execucoes_bigramas():
-	import GLOBAL_1L_BIGRAM as b1
-	import GLOBAL_2L_BIGRAM as b2
-	import GLOBAL_3L_BIGRAM as b3
-	import GLOBAL_4L_BIGRAM as b4
-	import GLOBAL_5L_BIGRAM as b5
-	import GLOBAL_6L_BIGRAM as b6
-	import GLOBAL_7L_BIGRAM as b7
-	import GLOBAL_8L_BIGRAM as b8
-	import GLOBAL_9L_BIGRAM as b9
-	import GLOBAL_10L_BIGRAM as b10
+	import GLOBAL_EXP_1L_BIGRAM as b1
+	import GLOBAL_EXP_2L_BIGRAM as b2
+	import GLOBAL_EXP_3L_BIGRAM as b3
+	import GLOBAL_EXP_4L_BIGRAM as b4
+	import GLOBAL_EXP_5L_BIGRAM as b5
+	import GLOBAL_EXP_6L_BIGRAM as b6
+	import GLOBAL_EXP_7L_BIGRAM as b7
+	import GLOBAL_EXP_8L_BIGRAM as b8
+	import GLOBAL_EXP_9L_BIGRAM as b9
+	import GLOBAL_EXP_10L_BIGRAM as b10
 
 	print('BIGRAM NETS')
 	print('==============================\n')
+
 	verify(b1)
 	verify(b2)
 	verify(b3)
