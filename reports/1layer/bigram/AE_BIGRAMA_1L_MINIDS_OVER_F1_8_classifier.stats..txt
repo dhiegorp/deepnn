@@ -6,36 +6,36 @@ Actual
 3           1    2    1  10  0   4   0   0   0       18
 4           0    0    0   0  0   0   0   0   1        1
 5           9    0    0   0  0  19   0   0   0       28
-6           0    3    0   0  0   0  12   0   0       15
+6           0    2    0   0  0   0  13   0   0       15
 7           7    4    0   0  0   0   0  32   3       46
-8           1    4    0   0  0   6   0   0  27       38
-__all__    75  103  112  10  0  30  12  32  33      407), ('overall', OrderedDict([('Accuracy', 0.855036855036855), ('95% CI', (0.81702685961892363, 0.88778080398602333)), ('No Information Rate', 'ToDo'), ('P-Value [Acc > NIR]', 4.7332280619112568e-132), ('Kappa', 0.82274827642204407), ("Mcnemar's Test P-Value", 'ToDo')])), ('class', Classes                                        0          1           2  \
+8           0    4    0   0  0   6   0   0  28       38
+__all__    74  102  112  10  0  30  13  32  34      407), ('overall', OrderedDict([('Accuracy', 0.85995085995086), ('95% CI', (0.8223872011636154, 0.8921722405218333)), ('No Information Rate', 'ToDo'), ('P-Value [Acc > NIR]', 1.9061896826983033e-134), ('Kappa', 0.8288805948130883), ("Mcnemar's Test P-Value", 'ToDo')])), ('class', Classes                                        0          1           2  \
 Population                                   407        407         407   
 P: Condition positive                         58         93         110   
 N: Condition negative                        349        314         297   
-Test outcome positive                         75        103         112   
-Test outcome negative                        332        304         295   
+Test outcome positive                         74        102         112   
+Test outcome negative                        333        305         295   
 TP: True Positive                             52         86         110   
-TN: True Negative                            326        297         295   
-FP: False Positive                            23         17           2   
+TN: True Negative                            327        298         295   
+FP: False Positive                            22         16           2   
 FN: False Negative                             6          7           0   
 TPR: (Sensitivity, hit rate, recall)    0.896552   0.924731           1   
-TNR=SPC: (Specificity)                  0.934097    0.94586    0.993266   
-PPV: Pos Pred Value (Precision)         0.693333   0.834951    0.982143   
-NPV: Neg Pred Value                     0.981928   0.976974           1   
-FPR: False-out                         0.0659026  0.0541401  0.00673401   
-FDR: False Discovery Rate               0.306667   0.165049   0.0178571   
+TNR=SPC: (Specificity)                  0.936963   0.949045    0.993266   
+PPV: Pos Pred Value (Precision)         0.702703   0.843137    0.982143   
+NPV: Neg Pred Value                     0.981982   0.977049           1   
+FPR: False-out                         0.0630372  0.0509554  0.00673401   
+FDR: False Discovery Rate               0.297297   0.156863   0.0178571   
 FNR: Miss Rate                          0.103448  0.0752688           0   
-ACC: Accuracy                           0.928747   0.941032    0.995086   
-F1 score                                0.781955   0.877551    0.990991   
-MCC: Matthews correlation coefficient   0.748936   0.840747    0.987689   
-Informedness                            0.830649   0.870591    0.993266   
-Markedness                              0.675261   0.811925    0.982143   
+ACC: Accuracy                           0.931204   0.943489    0.995086   
+F1 score                                0.787879   0.882051    0.990991   
+MCC: Matthews correlation coefficient   0.755443   0.846557    0.987689   
+Informedness                            0.833514   0.873776    0.993266   
+Markedness                              0.684685   0.820186    0.982143   
 Prevalence                              0.142506   0.228501     0.27027   
-LR+: Positive likelihood ratio           13.6042    17.0803       148.5   
-LR-: Negative likelihood ratio          0.110747  0.0795771           0   
-DOR: Diagnostic odds ratio               122.841    214.639         inf   
-FOR: False omission rate               0.0180723  0.0230263           0   
+LR+: Positive likelihood ratio           14.2226    18.1478       148.5   
+LR-: Negative likelihood ratio          0.110408  0.0793101           0   
+DOR: Diagnostic odds ratio               128.818    228.821         inf   
+FOR: False omission rate                0.018018  0.0229508           0   
 
 Classes                                        3         4          5  \
 Population                                   407       407        407   
@@ -69,26 +69,26 @@ Classes                                         6          7          8
 Population                                    407        407        407  
 P: Condition positive                          15         46         38  
 N: Condition negative                         392        361        369  
-Test outcome positive                          12         32         33  
-Test outcome negative                         395        375        374  
-TP: True Positive                              12         32         27  
+Test outcome positive                          13         32         34  
+Test outcome negative                         394        375        373  
+TP: True Positive                              13         32         28  
 TN: True Negative                             392        361        363  
 FP: False Positive                              0          0          6  
-FN: False Negative                              3         14         11  
-TPR: (Sensitivity, hit rate, recall)          0.8   0.695652   0.710526  
+FN: False Negative                              2         14         10  
+TPR: (Sensitivity, hit rate, recall)     0.866667   0.695652   0.736842  
 TNR=SPC: (Specificity)                          1          1    0.98374  
-PPV: Pos Pred Value (Precision)                 1          1   0.818182  
-NPV: Neg Pred Value                      0.992405   0.962667   0.970588  
+PPV: Pos Pred Value (Precision)                 1          1   0.823529  
+NPV: Neg Pred Value                      0.994924   0.962667    0.97319  
 FPR: False-out                                  0          0  0.0162602  
-FDR: False Discovery Rate                       0          0   0.181818  
-FNR: Miss Rate                                0.2   0.304348   0.289474  
-ACC: Accuracy                            0.992629   0.965602   0.958231  
-F1 score                                 0.888889   0.820513   0.760563  
-MCC: Matthews correlation coefficient    0.891024    0.81834   0.740011  
-Informedness                                  0.8   0.695652   0.694266  
-Markedness                               0.992405   0.962667    0.78877  
+FDR: False Discovery Rate                       0          0   0.176471  
+FNR: Miss Rate                           0.133333   0.304348   0.263158  
+ACC: Accuracy                            0.995086   0.965602   0.960688  
+F1 score                                 0.928571   0.820513   0.777778  
+MCC: Matthews correlation coefficient    0.928584    0.81834   0.757695  
+Informedness                             0.866667   0.695652   0.720582  
+Markedness                               0.994924   0.962667    0.79672  
 Prevalence                               0.036855   0.113022  0.0933661  
-LR+: Positive likelihood ratio                inf        inf    43.6974  
-LR-: Negative likelihood ratio                0.2   0.304348   0.294258  
-DOR: Diagnostic odds ratio                    inf        inf      148.5  
-FOR: False omission rate               0.00759494  0.0373333  0.0294118  )])
+LR+: Positive likelihood ratio                inf        inf    45.3158  
+LR-: Negative likelihood ratio           0.133333   0.304348   0.267508  
+DOR: Diagnostic odds ratio                    inf        inf      169.4  
+FOR: False omission rate               0.00507614  0.0373333  0.0268097  )])

@@ -9,7 +9,7 @@ Actual
 6           1    2    0   0  0   0  12   0   0       15
 7           7    4    0   0  0   0   0  32   3       46
 8           1    4    0   0  0   7   0   0  26       38
-__all__    76  102  112  10  0  31  12  32  32      407), ('overall', OrderedDict([('Accuracy', 0.85257985257985258), ('95% CI', (0.8143516591609733, 0.88558001422930099)), ('No Information Rate', 'ToDo'), ('P-Value [Acc > NIR]', 7.2407002718895947e-131), ('Kappa', 0.81980386514068138), ("Mcnemar's Test P-Value", 'ToDo')])), ('class', Classes                                        0          1           2  \
+__all__    76  102  112  10  0  31  12  32  32      407), ('overall', OrderedDict([('Accuracy', 0.8525798525798526), ('95% CI', (0.8143516591609733, 0.885580014229301)), ('No Information Rate', 'ToDo'), ('P-Value [Acc > NIR]', 7.240700271889595e-131), ('Kappa', 0.8198038651406814), ("Mcnemar's Test P-Value", 'ToDo')])), ('class', Classes                                        0          1           2  \
 Population                                   407        407         407   
 P: Condition positive                         58         93         110   
 N: Condition negative                        349        314         297   
