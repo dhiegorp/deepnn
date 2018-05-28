@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_4L\_FULLDS\_UNDER\_01\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_4L_FULLDS_UNDER_01_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 370} & 3 & 1 & 0 & 0 & 2 & 1 & 6 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 7 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 601} & 0 & 0 & 0 & 1 & 1 & 5 & 5 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 729} & 2 & 0 & 3 & 0 & 0 & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 2 & 16 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 95} & 0 & 4 & 1 & 0 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 1 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 2} & 3 & 0 & 0 & 5 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 2 & 3 & 33 & 3 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 139} & 0 & 5 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 1 & 2 & 0 & 1 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 92} & 3 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 10 & 6 & 2 & 2 & 0 & 4 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 280} & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 3 & 5 & 0 & 2 & 0 & 9 & 1 & 2 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 232} \\ \hline
+\end{tabular}
+\end{table}

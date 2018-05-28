@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_5L\_FULLDS\_UNDER\_01\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_5L_FULLDS_UNDER_01_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 365} & 9 & 1 & 0 & 0 & 1 & 0 & 8 & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 5 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 598} & 0 & 1 & 0 & 0 & 3 & 4 & 9 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 730} & 3 & 0 & 3 & 0 & 0 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 2 & 9 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 105} & 0 & 0 & 1 & 1 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 2 & 1 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 1} & 1 & 0 & 2 & 4 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 1 & 2 & 53 & 9 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 110} & 0 & 4 & 9 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 0 & 1 & 0 & 1 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 93} & 3 & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 9 & 6 & 5 & 0 & 0 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 283} & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 1 & 6 & 2 & 1 & 0 & 0 & 1 & 6 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 237} \\ \hline
+\end{tabular}
+\end{table}

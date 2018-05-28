@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_4L\_FULLDS\_UNDER\_02\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_4L_FULLDS_UNDER_02_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 326} & 6 & 1 & 0 & 0 & 5 & 1 & 46 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 5 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 590} & 0 & 0 & 0 & 7 & 3 & 11 & 4 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 730} & 1 & 0 & 5 & 0 & 0 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 1 & 15 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 92} & 0 & 10 & 0 & 1 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 1} & 6 & 0 & 1 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 0 & 3 & 30 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 149} & 0 & 3 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 0 & 2 & 0 & 3 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 92} & 3 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 3 & 5 & 4 & 1 & 0 & 3 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 290} & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 0 & 5 & 1 & 0 & 0 & 27 & 0 & 3 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 218} \\ \hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_9L\_FULLDS\_UNDER\_02\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_9L_FULLDS_UNDER_02_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 355} & 6 & 0 & 0 & 0 & 4 & 1 & 17 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 6 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 595} & 0 & 0 & 2 & 3 & 2 & 2 & 10 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 1 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 625} & 0 & 3 & 17 & 2 & 0 & 88 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 94} & 0 & 14 & 0 & 0 & 11 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 2} & 0 & 0 & 0 & 9 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 3 & 0 & 0 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 72} & 0 & 7 & 104 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 0 & 2 & 0 & 0 & 0 & 1 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 94} & 0 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 3 & 3 & 1 & 0 & 2 & 3 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 283} & 12 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 0 & 5 & 1 & 0 & 0 & 1 & 0 & 2 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 245} \\ \hline
+\end{tabular}
+\end{table}

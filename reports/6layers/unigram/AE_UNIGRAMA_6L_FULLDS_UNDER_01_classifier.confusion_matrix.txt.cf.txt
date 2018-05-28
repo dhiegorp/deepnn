@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_6L\_FULLDS\_UNDER\_01\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_6L_FULLDS_UNDER_01_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 362} & 9 & 0 & 1 & 0 & 4 & 0 & 9 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 5 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 594} & 2 & 1 & 0 & 3 & 0 & 11 & 4 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 732} & 2 & 0 & 2 & 0 & 0 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 2 & 6 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 105} & 0 & 6 & 0 & 0 & 0 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 1 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 1} & 5 & 1 & 0 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 0 & 2 & 17 & 4 & 1 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 157} & 0 & 4 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 0 & 2 & 0 & 0 & 2 & 2 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 91} & 0 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 10 & 5 & 3 & 7 & 0 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 279} & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 2 & 5 & 1 & 1 & 0 & 4 & 4 & 3 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 234} \\ \hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de Confusão de AE\_UNIGRAMA\_2L\_FULLDS\_UNDER\_03\_classifier, computada na fase de validação do modelo.}
+\label{conf:AE_UNIGRAMA_2L_FULLDS_UNDER_03_classifier}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+\multicolumn{1}{l|}{} & \cellcolor[HTML]{EFEFEF}\textbf{1} & \cellcolor[HTML]{EFEFEF}\textbf{2} & \cellcolor[HTML]{EFEFEF}\textbf{3} & \cellcolor[HTML]{EFEFEF}\textbf{4} & \cellcolor[HTML]{EFEFEF}\textbf{5} & \cellcolor[HTML]{EFEFEF}\textbf{6} & \cellcolor[HTML]{EFEFEF}\textbf{7} & \cellcolor[HTML]{EFEFEF}\textbf{8} & \cellcolor[HTML]{EFEFEF}\textbf{9} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1}} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 370} & 6 & 0 & 0 & 0 & 2 & 0 & 6 & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2}} & 12 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 596} & 2 & 1 & 0 & 1 & 1 & 4 & 3 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3}} & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 730} & 3 & 0 & 2 & 0 & 0 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4}} & 0 & 1 & 9 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 106} & 0 & 1 & 1 & 0 & 1 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5}} & 0 & 0 & 1 & 1 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 2} & 3 & 0 & 0 & 4 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6}} & 3 & 3 & 23 & 13 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 124} & 0 & 3 & 19 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7}} & 0 & 2 & 0 & 1 & 0 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 92} & 3 & 2 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{8}} & 14 & 10 & 4 & 1 & 0 & 2 & 0 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 272} & 4 \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{9}} & 1 & 5 & 1 & 4 & 0 & 0 & 1 & 2 & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} 240} \\ \hline
+\end{tabular}
+\end{table}
