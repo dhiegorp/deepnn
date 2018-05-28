@@ -1,5 +1,5 @@
 from keras.optimizers import SGD
-from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping, CSVLogger
 import os.path
 from ENVIRONMENT import *
 
