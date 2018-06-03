@@ -2,7 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_2L_BIGRAM_MINI import *
+from GLOBAL_EXP_CONFIG_3L_BIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
@@ -37,7 +37,7 @@ def header_log():
 
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
-	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_2gram_mini2', resolve_names=True)
+	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_2gram', resolve_names=True)
 	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
