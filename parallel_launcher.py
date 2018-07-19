@@ -32,7 +32,7 @@ logging.debug("Starting process launcher with search term \'" + search_term + "\
 def load():
 	global processes
 
-	filelist = glob.glob( search_term+'*' )
+	filelist = glob.glob( '*' +search_term+'*' )
 	
 	logging.debug(str(len(filelist)) + ' item(s) found for search_term ' + search_term) 
 
