@@ -2,19 +2,17 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_1L_UNIGRAM import *
+from GLOBAL_EXP_CONFIG_2L_BIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
-from datasets.dataset_loader import DatasetLoader
+from datasets.dataset_loader import CSVDatasetLoader
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 
 network_name = extract_name(sys.argv)
 network_name_path = GLOBAL['executed_path'] + network_name
 
-"""
-SET ENCODER FUNCTION'S LAYERS ON layers LIST
-"""
-layers = [96,76]
+
+layers = MAP_DIMS[network_name]
 
 logging.basicConfig(format=GLOBAL['log_format'], filename= GLOBAL['log_dir'] + network_name + '.log', level=logging.DEBUG)
 
@@ -23,7 +21,6 @@ ae_model = None
 mlp_model = None
 classifier_predictions = None
 trainx, trainy, valx, valy = None, None, None, None
-
 
 
 def header_log():
@@ -40,7 +37,8 @@ def header_log():
 
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
-	load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
+	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_2gram', resolve_names=True)
+	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
 	=======================================
@@ -73,7 +71,8 @@ def execute_autoencoder():
 		discard_decoder_model = CONFIG['discard_decoder_function'])
 
 	logging.debug("training and evaluate autoencoder")	
-
+	print(trainx.shape)
+	print(valx.shape)
 	ae_model.train_and_eval(
 		feature=trainx, 
 		feature_validation=valx, 

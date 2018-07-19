@@ -1,11 +1,11 @@
 import os.path
 import sys
-import logging
+import logging 
 from GLOBAL_EXP_FUNCTIONS import *
 from GLOBAL_EXP_CONFIG_1L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
-from datasets.dataset_loader import DatasetLoader
+from datasets.dataset_loader import CSVDatasetLoader
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 
 network_name = extract_name(sys.argv)
@@ -14,7 +14,8 @@ network_name_path = GLOBAL['executed_path'] + network_name
 """
 SET ENCODER FUNCTION'S LAYERS ON layers LIST
 """
-layers = [96,76]
+
+layers = MAP_DIMS[network_name]
 
 logging.basicConfig(format=GLOBAL['log_format'], filename= GLOBAL['log_dir'] + network_name + '.log', level=logging.DEBUG)
 
@@ -23,7 +24,6 @@ ae_model = None
 mlp_model = None
 classifier_predictions = None
 trainx, trainy, valx, valy = None, None, None, None
-
 
 
 def header_log():
@@ -37,10 +37,10 @@ def header_log():
 	"""
 	logging.debug(header.format(network_name, ','.join(str(layer) for layer in layers),  str(GLOBAL)))
 	
-
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
-	load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
+	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram', resolve_names=True)
+	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
 	=======================================
@@ -52,6 +52,8 @@ def data_init():
 	=======================================
 	""".format(GLOBAL['data_dir'], str(trainx.shape), str(trainy.shape), str(valx.shape), str(valy.shape))
 	logging.debug(msg)
+
+
 	
 def execute_autoencoder():
 	global ae_model

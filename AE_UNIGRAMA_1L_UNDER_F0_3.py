@@ -1,11 +1,11 @@
 import os.path
 import sys
-import logging
+import logging 
 from GLOBAL_EXP_FUNCTIONS import *
 from GLOBAL_EXP_CONFIG_1L_UNIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
-from datasets.dataset_loader import DatasetLoader
+from datasets.dataset_loader import CSVDatasetLoader
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 
 network_name = extract_name(sys.argv)
@@ -14,7 +14,8 @@ network_name_path = GLOBAL['executed_path'] + network_name
 """
 SET ENCODER FUNCTION'S LAYERS ON layers LIST
 """
-layers = [96,28]
+
+layers = MAP_DIMS[network_name]
 
 logging.basicConfig(format=GLOBAL['log_format'], filename= GLOBAL['log_dir'] + network_name + '.log', level=logging.DEBUG)
 
@@ -24,17 +25,6 @@ mlp_model = None
 classifier_predictions = None
 trainx, trainy, valx, valy = None, None, None, None
 
-ae_callbacks = [
-	EarlyStopping(monitor='val_loss', min_delta=0.01, patience=100, verbose=1, mode='min'),
-	ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '.h5', monitor='val_loss', save_best_only=True, verbose=1), 
-	TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=1, write_graph=True)	
-]
-
-mlp_callbacks = [
-	EarlyStopping(monitor='acc', min_delta=0.01, patience=100, verbose=1, mode='max'),
-	ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '_mlp.h5', monitor='val_acc', save_best_only=True, verbose=1), 
-	TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=1, write_graph=True)	
-]
 
 def header_log():
 	header = """
@@ -47,10 +37,10 @@ def header_log():
 	"""
 	logging.debug(header.format(network_name, ','.join(str(layer) for layer in layers),  str(GLOBAL)))
 	
-
 def data_init():
 	global trainx, trainy, valx, valy, load_ds
-	load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
+	load_ds = CSVDatasetLoader(GLOBAL['data_dir'], 'malware_selected_1gram', resolve_names=True)
+	#load_ds = DatasetLoader(GLOBAL['data_dir'], targets_list=GLOBAL['data_target_list'], normalize=True, maintain_originals=True)
 	trainx, trainy, valx, valy = load_ds()
 	msg = """
 	=======================================
@@ -62,6 +52,8 @@ def data_init():
 	=======================================
 	""".format(GLOBAL['data_dir'], str(trainx.shape), str(trainy.shape), str(valx.shape), str(valy.shape))
 	logging.debug(msg)
+
+
 	
 def execute_autoencoder():
 	global ae_model
