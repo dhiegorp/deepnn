@@ -1,0 +1,177 @@
+[2017-10-29 23:35:19,797 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:35:19,797 trial.py:139]: >> Printing header log
+[2017-10-29 23:35:19,797 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'shuffle_batches': True, 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'numpy_seed': 666, 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'batch': 32, 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'epochs': 10, 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'autoencoder_configs': {'hidden_layer_activation': 'relu', 'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000002A6DE471438>, 'discard_decoder_function': True, 'loss_function': 'mse'}, 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'mlp_configs': {'loss_function': 'categorical_crossentropy', 'use_last_dim_as_classifier': False, 'activation': 'softmax', 'optimizer': <keras.optimizers.SGD object at 0x000002A6E1B04C50>, 'classifier_dim': 9}, 'store_history': True, 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/'}
+		=======================================
+		
+[2017-10-29 23:35:19,797 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:35:19,797 trial.py:52]: =======================================
+[2017-10-29 23:35:19,797 trial.py:56]: setting configurations for autoencoder: 
+	 {'hidden_layer_activation': 'relu', 'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000002A6DE471438>, 'discard_decoder_function': True, 'loss_function': 'mse'}
+[2017-10-29 23:35:19,897 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:38:41,775 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:38:41,775 trial.py:139]: >> Printing header log
+[2017-10-29 23:38:41,775 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'mlp_configs': {'activation': 'softmax', 'use_last_dim_as_classifier': False, 'optimizer': <keras.optimizers.SGD object at 0x000002A56BD34C88>, 'classifier_dim': 9, 'loss_function': 'categorical_crossentropy'}, 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'numpy_seed': 666, 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'epochs': 10, 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'batch': 32, 'store_history': True, 'shuffle_batches': True, 'autoencoder_configs': {'optimizer': <keras.optimizers.SGD object at 0x000002A5686B8208>, 'loss_function': 'mse', 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu'}}
+		=======================================
+		
+[2017-10-29 23:38:41,775 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:38:41,775 trial.py:52]: =======================================
+[2017-10-29 23:38:41,775 trial.py:56]: setting configurations for autoencoder: 
+	 {'optimizer': <keras.optimizers.SGD object at 0x000002A5686B8208>, 'loss_function': 'mse', 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu'}
+[2017-10-29 23:38:41,866 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:41:22,782 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:41:22,782 trial.py:139]: >> Printing header log
+[2017-10-29 23:41:22,782 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'batch': 32, 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'epochs': 10, 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'shuffle_batches': True, 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'mlp_configs': {'optimizer': <keras.optimizers.SGD object at 0x0000015B1BD74C18>, 'use_last_dim_as_classifier': False, 'classifier_dim': 9, 'loss_function': 'categorical_crossentropy', 'activation': 'softmax'}, 'store_history': True, 'autoencoder_configs': {'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu', 'loss_function': 'mse', 'optimizer': <keras.optimizers.SGD object at 0x0000015B186F6198>}, 'numpy_seed': 666, 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/'}
+		=======================================
+		
+[2017-10-29 23:41:22,782 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:41:22,782 trial.py:52]: =======================================
+[2017-10-29 23:41:22,782 trial.py:56]: setting configurations for autoencoder: 
+	 {'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu', 'loss_function': 'mse', 'optimizer': <keras.optimizers.SGD object at 0x0000015B186F6198>}
+[2017-10-29 23:41:22,866 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:41:54,133 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:41:54,134 trial.py:139]: >> Printing header log
+[2017-10-29 23:41:54,134 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'mlp_configs': {'use_last_dim_as_classifier': False, 'optimizer': <keras.optimizers.SGD object at 0x000001A314164400>, 'activation': 'softmax', 'classifier_dim': 9, 'loss_function': 'categorical_crossentropy'}, 'batch': 32, 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'numpy_seed': 666, 'store_history': True, 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'autoencoder_configs': {'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000001A310AD16D8>, 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'loss_function': 'mse'}, 'epochs': 10, 'shuffle_batches': True, 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/'}
+		=======================================
+		
+[2017-10-29 23:41:54,134 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:41:54,134 trial.py:52]: =======================================
+[2017-10-29 23:41:54,134 trial.py:56]: setting configurations for autoencoder: 
+	 {'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000001A310AD16D8>, 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'loss_function': 'mse'}
+[2017-10-29 23:41:54,219 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:43:03,328 summary.py:89]: Summary name enc0_50/kernel:0 is illegal; using enc0_50/kernel_0 instead.
+[2017-10-29 23:43:03,328 summary.py:89]: Summary name enc0_50/bias:0 is illegal; using enc0_50/bias_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name enc1_18/kernel:0 is illegal; using enc1_18/kernel_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name enc1_18/bias:0 is illegal; using enc1_18/bias_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name enc2_9/kernel:0 is illegal; using enc2_9/kernel_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name enc2_9/bias:0 is illegal; using enc2_9/bias_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name dec0_18/kernel:0 is illegal; using dec0_18/kernel_0 instead.
+[2017-10-29 23:43:03,344 summary.py:89]: Summary name dec0_18/bias:0 is illegal; using dec0_18/bias_0 instead.
+[2017-10-29 23:43:03,360 summary.py:89]: Summary name dec1_50/kernel:0 is illegal; using dec1_50/kernel_0 instead.
+[2017-10-29 23:43:03,360 summary.py:89]: Summary name dec1_50/bias:0 is illegal; using dec1_50/bias_0 instead.
+[2017-10-29 23:43:03,360 summary.py:89]: Summary name dec2_96/kernel:0 is illegal; using dec2_96/kernel_0 instead.
+[2017-10-29 23:43:03,360 summary.py:89]: Summary name dec2_96/bias:0 is illegal; using dec2_96/bias_0 instead.
+[2017-10-29 23:43:18,734 trial.py:78]: trained and evaluated!
+[2017-10-29 23:43:18,734 trial.py:81]: Training history: 
+{'loss': [0.0096843666396463548, 0.0089489847344597952, 0.0083646522120429615, 0.0079130728274553631, 0.0075564358596728522, 0.007273018068177972, 0.0070437007290231708, 0.0068545981100083088, 0.0066961721110527931, 0.006560711954870414], 'val_loss': [0.0092967184163282261, 0.0086271754051505615, 0.0081157695347335752, 0.007712902387077703, 0.0073946263509001948, 0.0071394507510013239, 0.0069307460639939306, 0.006757229297548171, 0.0066103912930687812, 0.0064832209036143028]}
+[2017-10-29 23:43:18,734 trial.py:85]: done!
+[2017-10-29 23:43:18,735 trial.py:146]: >> Executing classifier part ... 
+[2017-10-29 23:44:53,796 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:44:53,796 trial.py:139]: >> Printing header log
+[2017-10-29 23:44:53,796 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'autoencoder_configs': {'discard_decoder_function': True, 'loss_function': 'mse', 'optimizer': <keras.optimizers.SGD object at 0x000002B2A54D15C0>, 'output_layer_activation': 'relu', 'hidden_layer_activation': 'relu'}, 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'shuffle_batches': True, 'numpy_seed': 666, 'batch': 32, 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'mlp_configs': {'loss_function': 'categorical_crossentropy', 'optimizer': <keras.optimizers.SGD object at 0x000002B2A8B64B70>, 'classifier_dim': 9, 'activation': 'softmax', 'use_last_dim_as_classifier': False}, 'store_history': True, 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'epochs': 10, 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/'}
+		=======================================
+		
+[2017-10-29 23:44:53,796 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:44:53,796 trial.py:52]: =======================================
+[2017-10-29 23:44:53,796 trial.py:56]: setting configurations for autoencoder: 
+	 {'discard_decoder_function': True, 'loss_function': 'mse', 'optimizer': <keras.optimizers.SGD object at 0x000002B2A54D15C0>, 'output_layer_activation': 'relu', 'hidden_layer_activation': 'relu'}
+[2017-10-29 23:44:53,906 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:44:55,691 summary.py:89]: Summary name enc0_50/kernel:0 is illegal; using enc0_50/kernel_0 instead.
+[2017-10-29 23:44:55,693 summary.py:89]: Summary name enc0_50/bias:0 is illegal; using enc0_50/bias_0 instead.
+[2017-10-29 23:44:55,697 summary.py:89]: Summary name enc1_18/kernel:0 is illegal; using enc1_18/kernel_0 instead.
+[2017-10-29 23:44:55,699 summary.py:89]: Summary name enc1_18/bias:0 is illegal; using enc1_18/bias_0 instead.
+[2017-10-29 23:44:55,702 summary.py:89]: Summary name enc2_9/kernel:0 is illegal; using enc2_9/kernel_0 instead.
+[2017-10-29 23:44:55,704 summary.py:89]: Summary name enc2_9/bias:0 is illegal; using enc2_9/bias_0 instead.
+[2017-10-29 23:44:55,707 summary.py:89]: Summary name dec0_18/kernel:0 is illegal; using dec0_18/kernel_0 instead.
+[2017-10-29 23:44:55,709 summary.py:89]: Summary name dec0_18/bias:0 is illegal; using dec0_18/bias_0 instead.
+[2017-10-29 23:44:55,712 summary.py:89]: Summary name dec1_50/kernel:0 is illegal; using dec1_50/kernel_0 instead.
+[2017-10-29 23:44:55,714 summary.py:89]: Summary name dec1_50/bias:0 is illegal; using dec1_50/bias_0 instead.
+[2017-10-29 23:44:55,717 summary.py:89]: Summary name dec2_96/kernel:0 is illegal; using dec2_96/kernel_0 instead.
+[2017-10-29 23:44:55,719 summary.py:89]: Summary name dec2_96/bias:0 is illegal; using dec2_96/bias_0 instead.
+[2017-10-29 23:45:11,273 trial.py:78]: trained and evaluated!
+[2017-10-29 23:45:11,273 trial.py:81]: Training history: 
+{'val_loss': [0.009296718460139063, 0.0086271754489614001, 0.0081157695840207676, 0.0077129024801757332, 0.007394626416616451, 0.0071394508550520633, 0.006930746113281123, 0.0067572293851698466, 0.0066103914465778495, 0.0064832210078361778], 'loss': [0.0096843666250140611, 0.0089489848003051122, 0.0083646522449656209, 0.0079130728695232053, 0.0075564359072278035, 0.0072730181431684728, 0.0070437008040136716, 0.0068545981831697727, 0.006696172237256319, 0.0065607121085094885]}
+[2017-10-29 23:45:11,274 trial.py:85]: done!
+[2017-10-29 23:45:11,274 trial.py:146]: >> Executing classifier part ... 
+[2017-10-29 23:45:11,274 trial.py:90]: =======================================
+[2017-10-29 23:45:11,274 trial.py:94]: setting configurations for classifier: 
+	 {'autoencoder_configs': {'discard_decoder_function': True, 'loss_function': 'mse', 'optimizer': <keras.optimizers.SGD object at 0x000002B2A54D15C0>, 'output_layer_activation': 'relu', 'hidden_layer_activation': 'relu'}, 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'shuffle_batches': True, 'numpy_seed': 666, 'batch': 32, 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'mlp_configs': {'loss_function': 'categorical_crossentropy', 'optimizer': <keras.optimizers.SGD object at 0x000002B2A8B64B70>, 'classifier_dim': 9, 'activation': 'softmax', 'use_last_dim_as_classifier': False}, 'store_history': True, 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'epochs': 10, 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/'}
+[2017-10-29 23:48:20,241 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:48:20,242 trial.py:139]: >> Printing header log
+[2017-10-29 23:48:20,242 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'shuffle_batches': True, 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'mlp_configs': {'loss_function': 'categorical_crossentropy', 'activation': 'softmax', 'optimizer': <keras.optimizers.SGD object at 0x000001F0FE094C50>, 'classifier_dim': 9, 'use_last_dim_as_classifier': False}, 'store_history': True, 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'epochs': 10, 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'batch': 32, 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'numpy_seed': 666, 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'autoencoder_configs': {'loss_function': 'mse', 'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000001F0FAA01588>, 'discard_decoder_function': True, 'hidden_layer_activation': 'relu'}}
+		=======================================
+		
+[2017-10-29 23:48:20,242 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:48:20,242 trial.py:52]: =======================================
+[2017-10-29 23:48:20,242 trial.py:56]: setting configurations for autoencoder: 
+	 {'loss_function': 'mse', 'output_layer_activation': 'relu', 'optimizer': <keras.optimizers.SGD object at 0x000001F0FAA01588>, 'discard_decoder_function': True, 'hidden_layer_activation': 'relu'}
+[2017-10-29 23:48:36,143 trial.py:138]: >> Initializing execution of experiment teste_unigrama
+[2017-10-29 23:48:36,159 trial.py:139]: >> Printing header log
+[2017-10-29 23:48:36,159 trial.py:47]: 
+		=======================================
+		network_name = teste_unigrama
+		layers = 96,50,18,9
+		using GLOBAL obj = 
+			{'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'shuffle_batches': True, 'batch': 32, 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'autoencoder_configs': {'optimizer': <keras.optimizers.SGD object at 0x00000135C2BB1550>, 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu', 'loss_function': 'mse'}, 'mlp_configs': {'optimizer': <keras.optimizers.SGD object at 0x00000135C6244B00>, 'classifier_dim': 9, 'activation': 'softmax', 'use_last_dim_as_classifier': False, 'loss_function': 'categorical_crossentropy'}, 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'numpy_seed': 666, 'epochs': 10, 'store_history': True}
+		=======================================
+		
+[2017-10-29 23:48:36,159 trial.py:144]: >> Executing autoencoder part ... 
+[2017-10-29 23:48:36,159 trial.py:52]: =======================================
+[2017-10-29 23:48:36,159 trial.py:56]: setting configurations for autoencoder: 
+	 {'optimizer': <keras.optimizers.SGD object at 0x00000135C2BB1550>, 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu', 'loss_function': 'mse'}
+[2017-10-29 23:48:36,259 trial.py:67]: training and evaluating autoencoder
+[2017-10-29 23:48:38,221 summary.py:89]: Summary name enc0_50/kernel:0 is illegal; using enc0_50/kernel_0 instead.
+[2017-10-29 23:48:38,221 summary.py:89]: Summary name enc0_50/bias:0 is illegal; using enc0_50/bias_0 instead.
+[2017-10-29 23:48:38,221 summary.py:89]: Summary name enc1_18/kernel:0 is illegal; using enc1_18/kernel_0 instead.
+[2017-10-29 23:48:38,236 summary.py:89]: Summary name enc1_18/bias:0 is illegal; using enc1_18/bias_0 instead.
+[2017-10-29 23:48:38,236 summary.py:89]: Summary name enc2_9/kernel:0 is illegal; using enc2_9/kernel_0 instead.
+[2017-10-29 23:48:38,236 summary.py:89]: Summary name enc2_9/bias:0 is illegal; using enc2_9/bias_0 instead.
+[2017-10-29 23:48:38,236 summary.py:89]: Summary name dec0_18/kernel:0 is illegal; using dec0_18/kernel_0 instead.
+[2017-10-29 23:48:38,236 summary.py:89]: Summary name dec0_18/bias:0 is illegal; using dec0_18/bias_0 instead.
+[2017-10-29 23:48:38,252 summary.py:89]: Summary name dec1_50/kernel:0 is illegal; using dec1_50/kernel_0 instead.
+[2017-10-29 23:48:38,252 summary.py:89]: Summary name dec1_50/bias:0 is illegal; using dec1_50/bias_0 instead.
+[2017-10-29 23:48:38,252 summary.py:89]: Summary name dec2_96/kernel:0 is illegal; using dec2_96/kernel_0 instead.
+[2017-10-29 23:48:38,268 summary.py:89]: Summary name dec2_96/bias:0 is illegal; using dec2_96/bias_0 instead.
+[2017-10-29 23:48:56,196 trial.py:78]: trained and evaluated!
+[2017-10-29 23:48:56,196 trial.py:81]: Training history: 
+{'val_acc': [0.60271958838662254, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074], 'loss': [0.0096843666250140611, 0.0089489847125113556, 0.0083646522157010354, 0.0079130728201392171, 0.007556435872476109, 0.0072730180736650819, 0.0070437007345102807, 0.0068545981118373449, 0.0066961721549496723, 0.0065607120280318778], 'val_loss': [0.0092967184163282261, 0.0086271753613397246, 0.0081157695894971214, 0.0077129023816013484, 0.0073946263399474847, 0.0071394507564776786, 0.0069307460145356025, 0.006757229297548171, 0.0066103913699088841, 0.0064832209530726308], 'acc': [0.3828403093089966, 0.5938382226001182, 0.5938382226842539, 0.5938382226001182, 0.59383822265133124, 0.59383822265133124, 0.59383822268791198, 0.59383822265133124, 0.59383822258548591, 0.59383822277570575]}
+[2017-10-29 23:48:56,196 trial.py:85]: done!
+[2017-10-29 23:48:56,196 trial.py:146]: >> Executing classifier part ... 
+[2017-10-29 23:48:56,196 trial.py:90]: =======================================
+[2017-10-29 23:48:56,196 trial.py:94]: setting configurations for classifier: 
+	 {'log_format': '[%(asctime)s %(filename)s:%(lineno)s]: %(message)s', 'shuffle_batches': True, 'batch': 32, 'reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/', 'autoencoder_configs': {'optimizer': <keras.optimizers.SGD object at 0x00000135C2BB1550>, 'hidden_layer_activation': 'relu', 'discard_decoder_function': True, 'output_layer_activation': 'relu', 'loss_function': 'mse'}, 'mlp_configs': {'optimizer': <keras.optimizers.SGD object at 0x00000135C6244B00>, 'classifier_dim': 9, 'activation': 'softmax', 'use_last_dim_as_classifier': False, 'loss_function': 'categorical_crossentropy'}, 'log_dir': 'c:/Users/dhieg/research/deepnn/logs/1layer/unigram/', 'executed_path': 'c:/Users/dhieg/research/deepnn/executed/1layer/unigram/', 'fullds_reports_dir': 'c:/Users/dhieg/research/deepnn/reports/1layer/unigram/fullds/', 'data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'checkpoints_dir': 'c:/Users/dhieg/research/deepnn/checkpoints/1layer/unigram/', 'tensorflow_dir': 'c:/Users/dhieg/research/deepnn/tensorflow/1layer/unigram/', 'fullds_data_dir': 'c:/Users/dhieg/research/malware_dataset/', 'data_target_list': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'numpy_seed': 666, 'epochs': 10, 'store_history': True}
+[2017-10-29 23:48:56,244 trial.py:103]: training ... 
+[2017-10-29 23:48:56,598 summary.py:89]: Summary name enc0_50/kernel:0 is illegal; using enc0_50/kernel_0 instead.
+[2017-10-29 23:48:56,600 summary.py:89]: Summary name enc0_50/bias:0 is illegal; using enc0_50/bias_0 instead.
+[2017-10-29 23:48:56,604 summary.py:89]: Summary name enc1_18/kernel:0 is illegal; using enc1_18/kernel_0 instead.
+[2017-10-29 23:48:56,606 summary.py:89]: Summary name enc1_18/bias:0 is illegal; using enc1_18/bias_0 instead.
+[2017-10-29 23:48:56,607 summary.py:89]: Summary name enc2_9/kernel:0 is illegal; using enc2_9/kernel_0 instead.
+[2017-10-29 23:48:56,607 summary.py:89]: Summary name enc2_9/bias:0 is illegal; using enc2_9/bias_0 instead.
+[2017-10-29 23:48:56,607 summary.py:89]: Summary name classifier/kernel:0 is illegal; using classifier/kernel_0 instead.
+[2017-10-29 23:48:56,607 summary.py:89]: Summary name classifier/bias:0 is illegal; using classifier/bias_0 instead.
+[2017-10-29 23:49:14,625 trial.py:115]: trained!
+[2017-10-29 23:49:14,625 trial.py:118]: Training history: 
+{'val_acc': [0.60271958838662254, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074, 0.60308710033076074], 'loss': [0.0096843666250140611, 0.0089489847125113556, 0.0083646522157010354, 0.0079130728201392171, 0.007556435872476109, 0.0072730180736650819, 0.0070437007345102807, 0.0068545981118373449, 0.0066961721549496723, 0.0065607120280318778], 'val_loss': [0.0092967184163282261, 0.0086271753613397246, 0.0081157695894971214, 0.0077129023816013484, 0.0073946263399474847, 0.0071394507564776786, 0.0069307460145356025, 0.006757229297548171, 0.0066103913699088841, 0.0064832209530726308], 'acc': [0.3828403093089966, 0.5938382226001182, 0.5938382226842539, 0.5938382226001182, 0.59383822265133124, 0.59383822265133124, 0.59383822268791198, 0.59383822265133124, 0.59383822258548591, 0.59383822277570575]}
+[2017-10-29 23:49:14,625 trial.py:122]: evaluating model ... 
+[2017-10-29 23:49:14,741 trial.py:126]: evaluated! 
+[2017-10-29 23:49:14,741 trial.py:128]: generating reports ... 
+[2017-10-29 23:49:15,209 trial.py:131]: done!
