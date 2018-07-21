@@ -1,12 +1,11 @@
 from keras.optimizers import SGD
-from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping, CSVLogger
 import os.path
 from ENVIRONMENT import *
 
 environment = Environment()
 base_path = environment.base_path
 ds_path = environment.dataset_base_path
-
 
 GLOBAL = {
 	'numpy_seed': 666,
@@ -46,31 +45,38 @@ GLOBAL = {
 
 
 }
- 
+
   
 MAP_DIMS = {
-	'AE_UNIGRAMA_6L_9FULLDS_UNDER_01' :  [96,  28,  26, 24, 22, 20, 19, 9],
-	'AE_UNIGRAMA_6L_9FULLDS_UNDER_02' :  [96,  76,  69, 63, 56, 49, 43, 9],
-	'AE_UNIGRAMA_6L_9FULLDS_UNDER_03':   [96,  86,  78, 71, 63, 55, 48, 9],
-	'AE_UNIGRAMA_6L_9FULLDS_OVER_04':    [96, 134, 122, 109,97, 84, 72, 9],
-	'AE_UNIGRAMA_6L_9FULLDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91, 9],
-	'AE_UNIGRAMA_6L_FULLDS_UNDER_01' :  [96,  28,  26, 24, 22, 20, 19],
-	'AE_UNIGRAMA_6L_FULLDS_UNDER_02' :  [96,  76,  69, 63, 56, 49, 43],
-	'AE_UNIGRAMA_6L_FULLDS_UNDER_03':   [96,  86,  78, 71, 63, 55, 48],
-	'AE_UNIGRAMA_6L_FULLDS_OVER_04':    [96, 134, 122, 109,97, 84, 72],
-	'AE_UNIGRAMA_6L_FULLDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91],
-	'AE_UNIGRAMA_6L_MINIDS_UNDER_01' :  [96,  28,  26, 24, 22, 20, 19],
-	'AE_UNIGRAMA_6L_MINIDS_UNDER_02' :  [96,  76,  69, 63, 56, 49, 43],
-	'AE_UNIGRAMA_6L_MINIDS_UNDER_03':   [96,  86,  78, 71, 63, 55, 48],
-	'AE_UNIGRAMA_6L_MINIDS_OVER_04':    [96, 134, 122, 109,97, 84, 72],
-	'AE_UNIGRAMA_6L_MINIDS_OVER_05' :   [96, 172, 156, 139, 123, 107, 91]	
+	#'AE_UNIGRAMA_4L_9FULLDS_UNDER_01' :  [96,  28,  26, 24, 22, 9],
+	#'AE_UNIGRAMA_4L_9FULLDS_UNDER_02' :  [96,  76,  69, 63, 56, 9],
+	#'AE_UNIGRAMA_4L_9FULLDS_UNDER_03':   [96,  86,  78, 71, 63, 9],
+	#'AE_UNIGRAMA_4L_9FULLDS_OVER_04':    [96, 134, 122, 109, 97, 9],
+	#'AE_UNIGRAMA_4L_9FULLDS_OVER_05' :   [96, 172, 156, 139, 123, 9],
+	#'AE_UNIGRAMA_4L_FULLDS_UNDER_01' :  [96,  28,  26, 24, 22],
+	#'AE_UNIGRAMA_4L_FULLDS_UNDER_02' :  [96,  76,  69, 63, 56],
+	#'AE_UNIGRAMA_4L_FULLDS_UNDER_03':   [96,  86,  78, 71, 63],
+	#'AE_UNIGRAMA_4L_FULLDS_OVER_04':    [96, 134, 122, 109, 97],
+	#'AE_UNIGRAMA_4L_FULLDS_OVER_05' :   [96, 172, 156, 139, 123],
+	#'AE_UNIGRAMA_4L_MINIDS_UNDER_01' :  [96,  28,  26, 24, 22],
+	#'AE_UNIGRAMA_4L_MINIDS_UNDER_02' :  [96,  76,  69, 63, 56],
+	#'AE_UNIGRAMA_4L_MINIDS_UNDER_03':   [96,  86,  78, 71, 63],
+	#'AE_UNIGRAMA_4L_MINIDS_OVER_04':    [96, 134, 122, 109, 97],
+	#'AE_UNIGRAMA_4L_MINIDS_OVER_05' :   [96, 172, 156, 139, 123]
+
+	'AE_UNIGRAMA_6L_FULLDS_OVER_01' :  [96, 144, 130, 117, 103, 90 , 76 ],
+	'AE_UNIGRAMA_6L_FULLDS_OVER_02' :  [96, 134, 121, 109, 96 , 84 , 71 ],
+	'AE_UNIGRAMA_6L_FULLDS_UNDER_03' : [96, 19 , 18 , 17 , 16 , 15 , 14 ],
+	'AE_UNIGRAMA_6L_FULLDS_OVER_04' :  [96, 163, 148, 132, 117, 101, 86 ],
+	'AE_UNIGRAMA_6L_FULLDS_OVER_05' :  [96, 192, 174, 155, 137, 119, 100]
 }
 
 def get_ae_callbacks(network_name):
 	ae_callbacks = [
 		EarlyStopping(monitor='val_loss', min_delta=0.01, patience=100, verbose=1, mode='min'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '.h5', monitor='val_loss', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=0, write_graph=False)	
+		#TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name , histogram_freq=0, write_graph=False)	
+		CSVLogger(GLOBAL['reports_dir'] + network_name + '.csv')
 	]
 	return ae_callbacks
 
@@ -79,7 +85,7 @@ def get_mlp_callbacks(network_name):
 	mlp_callbacks = [
 		EarlyStopping(monitor='acc', min_delta=0.01, patience=100, verbose=1, mode='max'),
 		ModelCheckpoint(GLOBAL['checkpoints_dir'] + network_name + '_mlp.h5', monitor='val_acc', save_best_only=True, verbose=1), 
-		TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=0, write_graph=False)	
+		#TensorBoard(log_dir=GLOBAL['tensorflow_dir'] + network_name + '_mlp', histogram_freq=0, write_graph=False)	
+		CSVLogger(GLOBAL['reports_dir'] + network_name + '_mlp.csv')
 	]
 	return mlp_callbacks
-
