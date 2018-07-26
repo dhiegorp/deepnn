@@ -2,7 +2,7 @@ import os.path
 import sys
 import logging
 from GLOBAL_EXP_FUNCTIONS import *
-from GLOBAL_EXP_CONFIG_1L_BIGRAM import *
+from GLOBAL_EXP_CONFIG_1L_TRIGRAM import *
 import numpy as np
 from deepnn.autoencoders.Autoencoder import Autoencoder
 from datasets.dataset_loader import CSVDatasetLoader
